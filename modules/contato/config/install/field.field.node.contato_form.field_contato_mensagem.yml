@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contato_mensagem
+    - node.type.contato_form
+id: node.contato_form.field_contato_mensagem
+field_name: field_contato_mensagem
+entity_type: node
+bundle: contato_form
+label: mensagem
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

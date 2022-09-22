@@ -1,0 +1,547 @@
+/***
+*       INÍCIO FLIP-CARD.CSS ===============================================================================================
+***/
+
+.cardBox {
+  float: left;
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  
+}
+
+.cardBox:hover .card {
+  transform: rotateY( 180deg);
+}
+
+.card {
+  cursor: default;
+  width: 218px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  height: 165px;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+}
+
+.card p {
+  margin-bottom: 1.8em;
+}
+
+.card .front,
+.card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.card .front strong {
+  background: #fff;
+  border-radius: 100%;
+  font-size: 1.5em;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+
+.card .back {
+  transform: rotateY( 180deg);
+}
+
+.card .back a {
+  padding: 0.3em 0.5em;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1px;
+  font-size: 0.9em;
+  transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+  background: #fff;
+  color: #333;
+  text-shadow: 0 0 1px #333;
+}
+
+.cardBox:nth-child(1) .card .back {
+  background: cornflowerblue;
+}
+
+.cardBox:nth-child(2) .card .back {
+  background: orange;
+}
+
+.cardBox:nth-child(3) .card .back {
+  background: yellowgreen;
+}
+
+.cardBox:nth-child(4) .card .back {
+  background: tomato;
+}
+
+.cardBox:nth-child(2) .card {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+
+.cardBox:nth-child(4) .card {
+  -webkit-animation: giro 2.5s 1;
+  animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .card {
+    height: 285px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+    height: 260px;
+  }
+}
+
+.flip-card {
+    width: 218px;/*218px*/
+    height: 165px;/*150*/
+    display: inline-block;
+    margin: 4px;
+}
+
+.flip-container {
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+    -ms-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+}
+
+.flip-container,
+.flip-container__front,
+.flip-container__back,
+.flip-container__button {
+    width:  100%;
+    height: 100%;
+	border-radius: 5px;
+}
+
+.flip-container__flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-container__front,
+.flip-container__back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -moz-transform: rotateY(0deg);
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    -o-transform: rotateY(0deg);
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+    -ms-transform: rotateY(0deg);
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-container__front {
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+}
+
+.flip-container__front button span{
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.flip-container__back {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    padding: 2%;
+}
+
+
+.flip-container__button {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid #dddddd;*/
+    border:0;
+/*    background-image: linear-gradient(to bottom, rgba(38,68,120,0.7), rgba(38,68,120,0.7)), url("../img/card/default.jpg?v=1.8.4");
+    background-repeat: no-repeat;
+*/  background-color:#00508A;
+    cursor: pointer;
+}
+
+.flip-container__button span {
+    color: #eeeeee;
+    font-size: 1em;
+    padding: 8px;
+    width: inherit;
+    font-weight: 600;
+    display: block;
+}
+
+.flip-container__estatico {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #dddddd;
+/*    background-image: linear-gradient(to bottom, rgba(38,68,120,0.7), rgba(38,68,120,0.7)), url("../img/card/default.jpg?v=1.8.4");
+    background-repeat: no-repeat;
+*/  background-color:#00508A;
+    cursor: pointer;
+	border-radius: 8px;
+}
+
+.flip-container__estatico span {
+    color: #eeeeee;
+    font-size: 1em;
+    padding: 8px;
+    width: inherit;
+    font-weight: 600;
+    display: block;
+}
+
+.flip-container.active .flip-container__back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+.flip-container.active .flip-container__front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+
+.block-flash-card a {
+    display: table-cell;
+}
+
+.box-flip-cards {
+    position: relative;
+    margin-top: -5px;
+    text-align: center;
+}
+
+.block-flash-card span{
+    color: #333333;
+    font-size: 0.6em;
+    font-weight:600;
+}
+
+/*.cards-container-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+  margin-left: 44px;
+}*/
+/* ############ CARD FLIP ############# */
+
+.flip-container__flipper {
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+	text-align: center;
+	border-radius: 8px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.flip-container__front, .flip-container__back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  border-radius: 8px;
+}
+
+.flip-container__front:hover {
+/*  bottom: 1px;
+  left: 1px;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.8);*/
+   transform: scale(1.05);
+}
+
+.flip-container__back {
+  background-color: #eee;
+  transform: rotateY(180deg);
+}
+
+/*.flip-container__back:hover {
+  bottom: 1px;
+  right: 1px;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.8);
+}*/
+
+.flip-container__back h1 {
+  color: #000;
+  font-size: 0.75em;
+  padding:7px;
+  text-align:center;
+  }
+
+.flip-container__back ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 3px;
+}
+
+.flip-container__back li {
+  color: #000;
+  font-size: 0.9em;
+  text-align:left;
+  line-height:1.8;
+  }
+
+.flip-container__back a:link {
+  text-decoration: none;
+  color: #000;
+  padding: 0px 6px;
+  }
+
+/* ########## CARD FLIP LINKS ########## */
+
+.card-link-container {
+  margin: 5px;
+  width: 250px;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.card-link {
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  width: 250px;
+  height: 350px;
+	text-align: center;
+	border-radius: 8px;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  background-color: #dddddd;
+}
+
+.card-link-front, .card-link-back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  width: 250px;
+  height: 350px;
+}
+
+.card-link-front:hover {
+  bottom: 1px;
+  left: 1px;
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.6);
+}
+
+.card-link-front h1 {
+  color: #333333;
+  font-size: 0.85em;
+  padding:7px;
+  }
+
+.card-link-front p {
+  color: #333333;
+  font-size: 0.7em;
+  margin:10px;
+  font-weight:700;
+    }
+
+.card-link-back {
+  background-color: #eee;
+  transform: rotateY(180deg);
+}
+
+.card-link-back:hover {
+  bottom: 1px;
+  right: 1px;
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.6);
+}
+
+.card-link-back h1 {
+  color: #000;
+  font-size: 0.85em;
+  padding:7px;
+  }
+  
+
+.link3-container { 
+  width: 100%; 
+  position: relative; 
+  bottom:0; display: 
+  block; color:#fff;
+  display: flex;  
+  justify-content: space-around; 
+  flex-direction: column; 
+  align-items: center; 
+  background-color:#363636;
+  padding: 30px 30px;
+}
+
+.card-link3-container {
+  margin: 5px;
+  width: 200px;
+  height: 130px;
+  perspective: 1000px;
+}
+
+.card-link3 {
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  width: 200px;
+  height: 130px;
+	text-align: center;
+	border-radius: 8px;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  background-color: #dddddd;
+}
+
+.card-link3-front, .card-link3-back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  width: 200px;
+  height: 130px;
+}
+
+.card-link3-front:hover {
+  bottom: 1px;
+  left: 1px;
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.6);
+}
+
+.card-link3-front h1 {
+  color: #333333;
+  font-size: 0.85em;
+  padding:7px;
+  }
+
+.card-link3-front p {
+  color: #333333;
+  font-size: 0.7em;
+  margin:10px;
+  font-weight:700;
+    }
+
+.card-link3-back {
+  background-color: #eee;
+  transform: rotateY(180deg);
+}
+
+.card-link3-back:hover {
+  bottom: 1px;
+  right: 1px;
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.6);
+}
+
+.card-link3-back h1 {
+	color: #000;
+	font-size: 0.85em;
+	padding:7px;
+  }
+  
+.link3-container-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.flip-container__flipper>div>button>img {
+  width: 218px;
+  height: 165px;
+}
+

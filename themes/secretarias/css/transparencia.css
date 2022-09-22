@@ -1,0 +1,245 @@
+
+.acesso-informacao {
+    width: 100%;
+    background: #eee;
+    text-align: center;
+    background: #44773a;
+    padding: 50px;
+    margin: 60px 0 0 0;
+}
+
+.section-wrap {
+    width: 77%;
+    margin: 0 auto;
+}
+
+.acesso-informacao h3 {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 2em;
+}
+
+.acesso-informacao h3::after {
+    content: "";
+    width: 70px;
+    height: 5px;
+    display: block;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.box-acesso-informacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    /* align-items: center; */
+    background: #355f2d;
+    padding: 20px 30px;
+    margin: 0 auto;
+    display: none;
+    position: relative;
+    z-index: 1000;
+}
+
+.close-secretario {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50px;
+    background: #ddd url(../imagens/close.svg) no-repeat center center;
+    background-size: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.box-desc-acesso {
+    width: 60%;
+    text-align: justify;
+    color: #fff;
+}
+
+.box-desc-acesso .funcao {
+    color: #fff;
+    font-size: 1.2em;
+    letter-spacing: 1.2;
+}
+
+.box-desc-acesso .secretario {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.box-img-acesso-informacao {
+    width: 300px;
+    height: 300px;
+    background: #f1f1f1;
+    margin: 40px 20px 50px 10px;
+}
+
+.box-img-acesso-informacao img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.box-acesso {
+    width: 100%;
+    display: flex;
+}
+
+.box-resumo-acesso {
+    width: 50%;
+    text-align: left;
+    padding: 20px 50px 20px 0;
+    color: #fff;
+}
+
+.box-resumo-acesso .funcao {
+    color: #fff;
+    font-size: 1.2em;
+    letter-spacing: 1.2;
+}
+
+.box-resumo-acesso .secretario {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.box-btns {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 10px 0 20px;
+}
+
+.btn-saiba-mais, .btn-agenda {
+    font-size: .9em;
+    padding: 10px;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-saiba-mais {
+    border: 2px solid #fff;
+}
+
+.socia-media-ft ul {
+    display: flex;
+}
+.socia-media-ft ul li {
+    padding-left: 10px;
+}
+.socia-media-ft a{
+    color: #fff;
+}
+.btn-agenda {
+    border: none;
+}
+
+.btn-agenda::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background: url(../imagens/icon_agenda.svg) no-repeat center center;
+    background-size: cover;
+}
+
+.box-endereco {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.box-endereco li {
+    list-style: none;
+    color: #fff;
+    text-indent: -36px;
+    margin: 7px 0 21px 31px;
+}
+
+.icons-endereco::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 13px;
+}
+
+.endereco-maps::before {
+    background: url(../imagens/flag-maps.svg) no-repeat center center;
+    background-size: cover;
+}
+
+.clock::before {
+    background: url(../imagens/clock.svg) no-repeat center center;
+    background-size: cover;
+}
+
+.phone::before {
+    background: url(../imagens/phone.svg) no-repeat center center;
+    background-size: cover;
+}
+
+.email::before {
+    background: url(../imagens/email.svg) no-repeat center center;
+    background-size: cover;
+}
+
+/* span#endereco-linha2 {
+    margin-left: 10px;
+} */
+
+.cubos-informacao {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 40%;
+}
+
+.boxes-acesso article {
+    width: 150px;
+    height: 150px;
+    background: #70bd63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.boxes-acesso a {
+    text-decoration: none;
+    color: #fff;
+}
+.cubos-informacao .views-view-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cubos-informacao .views-view-grid .views-row{
+    display: flex;
+    padding: 0 !important;
+    width: auto;
+}

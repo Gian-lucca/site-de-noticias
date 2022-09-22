@@ -1,0 +1,104 @@
+<?php
+
+/**
+ * @file
+ * Contains fontawesome_iconpicker.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+define('FONTAWESOME_ICONPICKER_LIBRARY', 'fontawesome-iconpicker');
+define('FONTAWESOME_ICONPICKER_NAME', 'Fontawesome Iconpicker');
+define('FONTAWESOME_ICONPICKER_URL', 'https://github.com/farbelous/fontawesome-iconpicker');
+define('FONTAWESOME_ICONPICKER_DOWNLOAD_URL', 'https://github.com/farbelous/fontawesome-iconpicker/archive/1.3.1.zip');
+
+
+/**
+ * Implements hook_help().
+ */
+function fontawesome_iconpicker_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help.
+    case 'help.page.fontawesome_iconpicker':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Font Awesome Iconpicker.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function fontawesome_iconpicker_theme($existing, $type, $theme, $path) {
+  return [
+    'fontawesome_iconpicker_formatter' => [
+      'variables' => [
+        'icon' => '',
+        'size' => '1x'
+      ]
+    ]
+  ];
+}
+
+
+/**
+ * Implements hook_libraries_info().
+ */
+function fontawesome_iconpicker_libraries_info() {
+  $libraries[FONTAWESOME_ICONPICKER_LIBRARY] = array(
+    'name' => FONTAWESOME_ICONPICKER_NAME,
+    'vendor url' => FONTAWESOME_ICONPICKER_URL,
+    'download url' => FONTAWESOME_ICONPICKER_DOWNLOAD_URL,
+    'version callback' => 'fontawesome_iconpicker_get_version',
+    'version arguments' => array(
+      'file' => 'package.json',
+    ),
+    'files' => array(
+      'css' => array(
+        'dist/css/fontawesome-iconpicker.css',
+      ),
+      'js' => array(
+        'dist/js/fontawesome-iconpicker.js',
+      ),
+    ),
+    'dependencies' => array(
+      'fontawesome',
+    ),
+    'variants' => array(
+      'minified' => array(
+        'files' => array(
+          'css' => array(
+            'dist/css/fontawesome-iconpicker.min.css',
+          ),
+          'js' => array(
+            'dist/js/fontawesome-iconpicker.min.js',
+          ),
+        ),
+      ),
+    ),
+  );
+  return $libraries;
+}
+
+/**
+ * Reads version of installed fontawesome iconpicker library.
+ *
+ * @see fontawesome_iconpicker_libraries_info()
+ */
+function fontawesome_iconpicker_get_version($library, $options) {
+  // Provide defaults.
+  $options += array(
+    'file' => '',
+  );
+
+  $file = DRUPAL_ROOT . '/' . $library['library path'] . '/' . $options['file'];
+  if (empty($options['file']) || !file_exists($file)) {
+    return;
+  }
+  $f = file_get_contents($file);
+  $data = json_decode($f);
+  return (isset($data->version)) ? $data->version : NULL;
+}

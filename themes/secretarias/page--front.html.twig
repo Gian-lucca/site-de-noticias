@@ -1,0 +1,465 @@
+
+{% include directory ~ "/partials/header.html.twig" %}
+
+{% if page.sliderPrincipal  %}
+    <div class="slider-fixo" data-aos="zoom-in" data-aos-duration="2000">
+        {{ page.sliderPrincipal }}
+		
+    </div><!-- /slider-fixo -->
+    
+{% endif %}
+
+{% if page.bannerPrincipal %}
+    <section class="banner branco">
+        <div class="slider-fixo" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="banner-principal">
+                {{ page.bannerPrincipal }}
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% if page.sliderEstrutura %}
+    <section data-aos="fade-left" class="programas-acoes branco aos-init aos-animate">
+        <div class="section-container estrutura">    
+            <div class="titulo-secao">
+                <span>Estrutura</span>
+            </div>       
+            {{ page.sliderEstrutura }}
+        </div>    
+    </section><!-- /estrutura -->
+{% endif %}
+
+{% if page.noticiasPrincipal %}
+    <section class="banner branco noticias" class="programas-acoes branco aos-init aos-animate">
+		<div class="titulo-secao">
+			<span>Notícias</span>
+		</div> 
+        {{ page.noticiasPrincipal }}
+        <div class="lista-noticias-line">
+                <button class="lista-noticias">
+                <a id="A3" href="./noticias">Veja a lista completa de notícias</a>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+{% endif %}
+
+
+<section class="banner branco noticias" class="programas-acoes branco aos-init aos-animate">
+	<div class="titulo-secao" class="painelContainer-wrap">
+		<span>PAINEL ECONÔMICO</span>
+	</div> 
+</section>
+
+<div class="painelContainer-wrap">
+		{% if page.pibbrasil %}
+			<section class="banner branco noticias" class="programas-acoes branco aos-init aos-animate">
+				<div class="titulo-pe" class="painel-titulo">
+					<span>PIB Brasil</span>
+				</div> 
+				{{ page.pibbrasil }}
+			</section>
+			
+		{% endif %}
+
+		{% if page.moedas %}
+			<section class="banner branco noticias" class="programas-acoes branco aos-init aos-animate">
+				<div class="titulo-pe" class="painel-titulo">
+					<span>Moedas</span>
+					</div> 
+					{{ page.moedas }}
+				
+			</section>
+			
+		{% endif %}
+
+		{% if page.taxas %}
+			<section class="banner branco noticias" class="programas-acoes branco aos-init aos-animate">
+				<div class="titulo-pe" class="painel-titulo">
+					<span>Taxas</span>
+					</div> 
+					{{ page.taxas }}
+				
+			</section>
+			
+		{% endif %}
+
+		{% if page.indice %}
+			<section class="banner branco noticias" class="programas-acoes branco aos-init aos-animate">
+				<div class="titulo-pe" class="painel-titulo">
+					<span>Índice</span>
+					</div> 
+					{{ page.indice }}
+				
+			</section>
+			
+		{% endif %}
+
+		{% if page.balancacomerical %}
+			<section class="banner branco noticias" class="programas-acoes branco aos-init aos-animate">
+				<div class="titulo-pe" class="painel-titulo">
+					<span>Balança Comercial</span>
+					</div> 
+					{{ page.balancacomerical }}
+				
+			</section>
+			
+		{% endif %}
+
+		{% if page.salariominimo %}
+			<section class="banner branco noticias" class="programas-acoes branco aos-init aos-animate">
+				<div class="titulo-pe" class="painel-titulo">
+					<span>Salário Mínimo</span>
+					</div> 
+					{{ page.salariominimo }}
+				
+			</section>
+			
+		{% endif %}
+		
+</div>	
+
+
+
+
+{% if page.videosPrincipal %}
+    <section id="video" data-aos="fade-right" class="programas-acoes branco aos-init aos-animate"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <div class="section-container" id="video-section">
+            <div class="titulo-secao"><span>Vídeos</span></div>
+                {{ page.videosPrincipal }}
+            <div class="lista-noticias-line">
+                <button class="lista-noticias">
+                <a id="A3" href="./video_principal_youtube">Veja a lista completa de vídeos</a>
+                </button>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% if page.publicacoes %}
+    <section data-aos="fade-left" class="programas-acoes branco aos-init aos-animate">
+        <div class="section-container">
+            <div class="titulo-secao">
+                <span>Publicações</span>
+            </div>
+            {{ page.publicacoes }}
+			<div class="lista-noticias-line">
+                <button class="lista-noticias">
+                <a id="A3" href="/publicacoes">Veja a lista completa de Publicações</a>
+                </button>
+            </div>
+        </div>
+    </section>
+    <hr class="gradiente">
+{% endif %}
+
+
+
+{% if page.flipCard %}
+    <section class="section-container aos-init aos-animate" data-aos="flip-down" data-aos-easing="ease-out-cubic">
+    	{{ page.flipCard  }}
+    </section>
+    <hr class="gradiente">
+{% endif %}
+
+{% if page.dadosPrincipal %}
+    <section class="programas-acoes branco" data-aos="fade-up-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="aos-init aos-animate">
+        <div class="section-container">
+            <div class="titulo-secao">
+                <span>ISP Dados</span>
+                <p></p>
+            </div>
+            <div class="dados-principal">
+                {{ page.dadosPrincipal }}
+            </div>
+
+        </div>
+    </section>
+<hr class="gradiente">
+{% endif %}
+
+<!--
+<section class="acesso-informacao">
+	<div class="section-wrap aos-init aos-animate" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
+		<h3>Transparência</h3>
+
+		<div class="box-acesso-informacao">  style="display: flex; flex-wrap: wrap;" 
+		 	<button class="close-secretario"></button>
+			<div class="box-desc-acesso">
+				<span class="funcao">Secretário</span><br>
+				<span class="secretario">Paulo Renato Marques</span>
+				Engenheiro pela UFRJ, com Pós Graduação em Engenharia Econômica, Ciências Contábeis e Mercado de Capitais. MBA em Marketing pela COPPEAD, Mestrado em Ciência Política e Doutorando em Psicanálise e Sociedade. 25 anos de experiência no setor privado em empresas como CSN e Light com forte passagem pelos mercados externos. Diretor Financeiro da Apolo Algodão. Atuação em diversas empresas em recuperação. 16 anos em setor público, tendo sido administrador judicial da Glória Parmalat e CCPL, sub-secretario e secretario na área de desenvolvimento econômico.
+			</div> /box-desc-acesso 
+			<div class="box-img-acesso-informacao">
+				<img src="./imagens/paulo-renato-marques.jpg" alt="">
+			</div> /box-img-acesso-informacao 
+		</div>- /box-acesso-informacao 
+
+		<div class="box-acesso">
+
+			<div class="box-resumo-acesso">
+				<span class="funcao">SECRETÁRIO</span><br>
+				{{ page.transparenciaPresidente }}
+				<div class="box-endereco">
+					{{ page.transparenciaSede }}
+				</div> /box-endereco 
+				<div class="socia-media-ft">
+					<h4 style="margin-bottom: 10px; font-size: .8em;"></h4>
+                	{{ page.redesSociaisPortal }}
+				</div> /redes 
+			</div> /box-resumo-acesso 
+			<div class="cubos-informacao">
+				{{ page.transparenciaCard }}
+			</div>
+
+		</div>/box-acesso 
+
+	</div> /section-wrap 
+</section>
+-->
+
+{% if page.sliderSemTempo  %}
+    <div class="slider-fixo" data-aos="zoom-in" data-aos-duration="2000">
+        {{ page.sliderSemTempo }}       
+    </div><!-- /slider-fixo -->
+    
+{% endif %}
+
+{% if page.sliderUteis %}
+    <section data-aos="fade-left" class="programas-acoes branco aos-init aos-animate">
+        <div class="section-container">
+            <div class="titulo-secao">
+                <span>Links Úteis</span>
+            </div>
+            {{ page.sliderUteis }}
+			<div class="lista-links">
+                <button class="lista-noticias">
+                <a id="A3" href="./publicacoes">Veja a lista completa de Links Uteis</a>
+                </button>
+            </div>
+        </div>
+    </section><!-- /linkUteis -->
+    <hr class="gradiente">
+{% endif %}
+
+
+{% if page.sliderSecundario  %}
+    <div class="slider-fixo" data-aos="zoom-in" data-aos-duration="2000">
+        {{ page.sliderSecundario }}
+		<div class="lista-noticias-line">
+              
+            </div>
+        </div>
+    </div><!-- /slider-fixo -->
+    
+{% endif %}
+
+{% if page.sliderServicos %}
+    <section data-aos="fade-left" class="programas-acoes branco aos-init aos-animate">
+        <div class="section-container">    
+            <div class="titulo-secao">
+                <span>Serviços</span>
+            </div>       
+            {{ page.sliderServicos }}
+        </div>    
+    </section><!-- /serviços -->
+{% endif %}
+
+<!--<section class="telefones-uteis">
+	<div class="section-container" id="telefones-uteis">
+
+		<div class="titulo-secao">
+			<span>Nossos Endereços</span>
+			<p></p>
+		</div>
+
+		<div class="telefones-uteis-wrap">
+
+					<div class="telefones-uteis-linha">
+
+						<button class="md-trigger" data-modal="modal-9-1">SEDE (Niterói)</button>
+
+
+					</div>
+
+
+					<div class="md-modal-telefones md-effect-telefones" id="modal-9-1">
+						<div class="md-content-telefones">
+							<div class="fecha-modal md-close">×</div>
+							<div class="logo-pesagro-card"></div>
+							<p>SEDE (Niterói)</p>
+							<h3><a href="tel:190">Alameda São Boaventura, 770 - Fonseca, Niterói, RJ - CEP 24.120-191</a></h3>
+						</div>
+					</div>
+
+
+
+					<div class="telefones-uteis-linha">
+
+						<button class="md-trigger" data-modal="modal-9-3">CEP SANIDADE ANIMAL (Niterói)</button>
+
+
+					</div>
+
+
+					<div class="md-modal-telefones md-effect-telefones" id="modal-9-3">
+						<div class="md-content-telefones">
+							<div class="fecha-modal md-close">×</div>
+							<div class="logo-pesagro-card"></div>
+							<p>CEP SANIDADE ANIMAL (Niterói)</p>
+							<h3><a href="tel:193">Alameda São Boaventura, 770 - Fonseca, Niterói, RJ - CEP 24.120-191</a></h3>
+						</div>
+					</div>
+
+
+
+					<div class="telefones-uteis-linha">
+
+						<button class="md-trigger" data-modal="modal-9-4">CEP QUALIDADE DE ALIMENTOS (Niterói)</button>
+						<span id="RptTelefoneUtil_ctl02_lblTelefone"><br></span>
+
+					</div>
+
+
+					<div class="md-modal-telefones md-effect-telefones" id="modal-9-4">
+						<div class="md-content-telefones">
+							<div class="fecha-modal md-close">×</div>
+							<div class="logo-pesagro-card"></div>
+							<p>CEP QUALIDADE DE ALIMENTOS (Niterói)</p>
+							<h3><a href="tel:2276-6556">Alameda São Boaventura, 770 - Fonseca, Niterói, RJ - CEP 24.120-191</a></h3>
+						</div>
+					</div>
+
+
+
+					<div class="telefones-uteis-linha">
+
+						<button class="md-trigger" data-modal="modal-9-5">CEP AGROENERGIA E APROVEITAMENTO DE RESÍDUOS (Campos dos Goytacazes)</button>
+
+
+					</div>
+
+
+					<div class="md-modal-telefones md-effect-telefones" id="modal-9-5">
+						<div class="md-content-telefones">
+							<div class="fecha-modal md-close">×</div>
+							<div class="logo-pesagro-card"></div>
+							<p>CEP AGROENERGIA E APROVEITAMENTO DE RESÍDUOS (Campos dos Goytacazes)</p>
+							<h3><a href="tel:192">Av. Francisco Lamego, 134 - Guarus, Campos - RJ - CEP: 28.080-000</a></h3>
+						</div>
+					</div>
+
+
+
+					<div class="telefones-uteis-linha">
+
+						<button class="md-trigger" data-modal="modal-9-6">CEP AGRICULTURA ORGÂNICA (Seropédica)</button>
+
+
+					</div>
+
+
+					<div class="md-modal-telefones md-effect-telefones" id="modal-9-6">
+						<div class="md-content-telefones">
+							<div class="fecha-modal md-close">×</div>
+							<div class="logo-pesagro-card"></div>
+							<p>CEP AGRICULTURA ORGÂNICA (Seropédica)</p>
+							<h3><a href="tel:155">BR 465, Km 47 - Bairro Ecologia, Seropédica, RJ - CEP: 23.890-000</a></h3>
+						</div>
+					</div>
+
+
+
+					<div class="telefones-uteis-linha">
+
+						<button class="md-trigger" data-modal="modal-9-7">CEP DESENVOLVIMENTO RURAL SUSTENTÁVEL (Macaé)</button>
+						<span id="RptTelefoneUtil_ctl05_lblTelefone"><br></span>
+
+					</div>
+
+
+					<div class="md-modal-telefones md-effect-telefones" id="modal-9-7">
+						<div class="md-content-telefones">
+							<div class="fecha-modal md-close">×</div>
+							<div class="logo-pesagro-card"></div>
+							<p>CEP DESENVOLVIMENTO RURAL SUSTENTÁVEL (Macaé)</p>
+							<h3><a href="tel:2332-8611">Estrada Adérson Ferreira Filho, s/nº, Cidade Nova - Macaé, RJ - CEP: 27.949-100</a></h3>
+						</div>
+					</div>
+
+
+
+					<div class="telefones-uteis-linha">
+
+						<button class="md-trigger" data-modal="modal-9-8">CEP DESENVOLVIMENTO DA PECUÁRIA LEITEIRA (Itaocara)</button>
+
+
+					</div>
+
+
+					<div class="md-modal-telefones md-effect-telefones" id="modal-9-8">
+						<div class="md-content-telefones">
+							<div class="fecha-modal md-close">×</div>
+							<div class="logo-pesagro-card"></div>
+							<p>CEP DESENVOLVIMENTO DA PECUÁRIA LEITEIRA (Itaocara)</p>
+							<h3><a href="tel:199">Antigo Campo de Sementes, s/nº - Itaocara - RJ - CEP: 28.570-000</a></h3>
+						</div>
+					</div>
+
+
+
+					<div class="telefones-uteis-linha">
+
+						<button class="md-trigger" data-modal="modal-9-9">CEP HORTICULTURA (Nova Friburgo)</button>
+
+
+					</div>
+
+
+					<div class="md-modal-telefones md-effect-telefones" id="modal-9-9">
+						<div class="md-content-telefones">
+							<div class="fecha-modal md-close">×</div>
+							<div class="logo-pesagro-card"></div>
+							<p>CEP HORTICULTURA (Nova Friburgo)</p>
+							<h3><a href="tel:2334-7910">R. Euclides Solos de Pontes, nº 30 - Centro, Nova Friburgo, RJ - CEP: 28.625-020</a></h3>
+						</div>
+					</div>
+
+
+
+					<div class="telefones-uteis-linha">
+
+						<button class="md-trigger" data-modal="modal-9-11">SERVIÇO DE INFORMAÇÃO DE MERCADO AGRÍCOLA (Rio de Janeiro)</button>
+						<span id="RptTelefoneUtil_ctl08_lblTelefone"><br></span>
+
+					</div>
+
+
+					<div class="md-modal-telefones md-effect-telefones" id="modal-9-11">
+						<div class="md-content-telefones">
+							<div class="fecha-modal md-close">×</div>
+							<div class="logo-pesagro-card"></div>
+							<p>SERVIÇO DE INFORMAÇÃO DE MERCADO AGRÍCOLA (Rio de Janeiro)</p>
+							<h3><a href="tel:3460-4040">Av. Brasil, 1001, Ed. Administrativo da CEASA, Rio de Janeiro, RJ - CEP 20.940-070</a></h3>
+						</div>
+					</div>
+
+
+
+
+
+
+
+		</div>
+
+	</div>
+</section>-->
+
+    <!-- VOLTAR AO TOPO -->
+
+    <a id="back2Top" title="Voltar ao topo" href="#">&#10148;</a>
+
+{% include directory ~ "/partials/footer.html.twig" %}

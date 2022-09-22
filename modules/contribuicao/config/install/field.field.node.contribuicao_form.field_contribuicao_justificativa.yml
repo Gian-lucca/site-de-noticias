@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contribuicao_justificativa
+    - node.type.contribuicao_form
+id: node.contribuicao_form.field_contribuicao_justificativa
+field_name: field_contribuicao_justificativa
+entity_type: node
+bundle: contribuicao_form
+label: justificativa
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

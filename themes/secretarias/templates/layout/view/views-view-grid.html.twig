@@ -1,0 +1,50 @@
+{%
+  set classes = [
+    'views-view-grid',
+    options.alignment,
+    'cols-' ~ options.columns,
+    'clearfix',
+  ]
+%}
+{% if options.row_class_default %}
+  {%
+    set row_classes = [
+      'views-row',
+      options.alignment == 'horizontal' ? 'clearfix',
+    ]
+  %}
+{% endif %}
+{% if options.col_class_default %}
+  {%
+    set col_classes = [
+      'views-col',
+      options.alignment == 'vertical' ? 'clearfix',
+    ]
+  %}
+{% endif %}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+<div{{ attributes.addClass(classes) }}>
+  {% if options.alignment == 'horizontal' %}
+    {% for row in items %}
+      <div{{ row.attributes.addClass(row_classes, options.row_class_default ? 'row-' ~ loop.index) }}>
+        {% for column in row.content %}
+          <div{{ column.attributes.addClass(col_classes, options.col_class_default ? 'col-' ~ loop.index) }}>
+            {{- column.content -}}
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  {% else %}
+    {% for column in items %}
+      <div{{ column.attributes.addClass(col_classes, options.col_class_default ? 'col-' ~ loop.index) }}>
+        {% for row in column.content %}
+          <div{{ row.attributes.addClass(row_classes, options.row_class_default ? 'row-' ~ loop.index) }}>
+            {{- row.content -}}
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  {% endif %}
+</div>

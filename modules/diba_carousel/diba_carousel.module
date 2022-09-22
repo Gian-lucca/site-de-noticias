@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Diba carousel slider module.
+ */
+
+use Drupal\Core\Database\Query\SelectInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function diba_carousel_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.diba_carousel':
+      $text = file_get_contents(dirname(__FILE__) . '/README.md');
+      if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
+        $output = '<pre>' . $text . '</pre>';
+      }
+      else {
+        // Use the Markdown filter to render the README file.
+        $settings = \Drupal::configFactory()->get('markdown.settings')->getRawData();
+        $filter = \Drupal::service('plugin.manager.filter')->createInstance('markdown', ['settings' => $settings]);
+        $output = $filter->process($text, 'en');
+      }
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function diba_carousel_theme($existing, $type, $theme, $path) {
+  return [
+    'block__diba_carousel' => [
+      'base hook' => 'block',
+      'render element' => 'elements',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_query_tag_alter().
+ */
+function diba_carousel_query_random_order_alter(SelectInterface $query) {
+  // Select a random element.
+  $query->orderRandom();
+}

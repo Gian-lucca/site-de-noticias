@@ -1,0 +1,19 @@
+#/*
+#|--------------------------------------------------------------------------
+#| .info
+#|--------------------------------------------------------------------------|
+#| Arquivo onde infomamos as comnfiguraçãoes básicas do nosso módulo
+#| author Davi Bernardo <davi.santos@extreme.digital>
+#| version 1.1
+#| copyright Proderj 2021.
+#*/
+name: Formulário de contato
+type: module
+description: 'Formulário de contato para todos os sites'
+package: contact
+core: 8.x
+core_version_requirement: ^8 || ^9
+configure: contato.admin_settings_form
+
+version: '1.1'
+project: 'contato'

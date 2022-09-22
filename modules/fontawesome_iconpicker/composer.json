@@ -1,0 +1,57 @@
+{
+  "name": "drupal/fontawesome_iconpicker",
+  "type": "drupal-module",
+  "description": "D8 port of fontawesome_iconpicker",
+  "keywords": [
+    "Drupal"
+  ],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/fontawesome_iconpicker",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/fontawesome_iconpicker",
+    "source": "http://cgit.drupalcode.org/fontawesome_iconpicker"
+  },
+  "require": {
+    "fortawesome/font-awesome": "^4.6",
+    "farbelous/fontawesome-iconpicker": "^1.3"
+  },
+  "repositories": {
+    "font-awesome": {
+      "type": "package",
+      "package": {
+        "name": "fortawesome/font-awesome",
+        "version": "v4.7.0",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "fontawesome"
+        },
+        "dist": {
+          "url": "https://github.com/FortAwesome/Font-Awesome/archive/v4.7.0.zip",
+          "type": "zip"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        }
+      }
+    },
+    "fontawesome-iconpicker": {
+      "type": "package",
+      "package": {
+        "name": "farbelous/fontawesome-iconpicker",
+        "version": "v1.3.1",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "fontawesome-iconpicker"
+        },
+        "dist": {
+          "url": "https://github.com/farbelous/fontawesome-iconpicker/archive/1.3.1.zip",
+          "type": "zip"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        }
+      }
+    }
+  }
+}

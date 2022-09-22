@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contato_nome
+    - node.type.contato_form
+id: node.contato_form.field_contato_nome
+field_name: field_contato_nome
+entity_type: node
+bundle: contato_form
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

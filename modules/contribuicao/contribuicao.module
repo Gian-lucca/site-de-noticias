@@ -1,0 +1,93 @@
+<?php
+/*
+|--------------------------------------------------------------------------
+| contribuicao.module
+|--------------------------------------------------------------------------|
+| Arquivo é onde implementamos o layout que será enviado para o emails 
+| usuário
+| author Davi Bernardo <davi.santos@extreme.digital>
+| version 1.1
+| copyright Proderj 2021.
+*/
+
+/**
+ * @file
+ * Formulário de contribuição
+ */
+
+use Drupal\Component\Utility\Html;
+
+/**
+ * Implements hook_mail().
+ */
+function contribuicao_mail($key, &$message, $params) {
+  switch ($key) {
+    case 'contribuicao_notificacao':
+      $message['from'] = \Drupal::config('system.site')->get('email');
+      $site_name = \Drupal::config('system.site')->get('nome');
+
+      $message['subject'] = $site_name . ": " . t('Novo Formulário de Contribuições');
+
+      $message_body['protocolo'] = $params['message']['contribuicaoprotocolo'];
+      $message_body['nome'] = $params['message']['contribuicaonome'];
+      $message_body['email'] = $params['message']['contribuicaoemail'];
+      $message_body['cpf'] = $params['message']['contribuicaocpf'];
+      $message_body['orgao'] = $params['message']['contribuicaoorgao'];
+      $message_body['cargo'] = $params['message']['contribuicaocargo'];
+      $message_body['minuta'] = $params['message']['contribuicaominuta'];
+      $message_body['texto'] = $params['message']['contribuicaotexto'];
+      $message_body['justificativa'] = $params['message']['contribuicaojustificativa'];
+      $message_body['arquivo'] = $params['message']['contribuicaofiles'];
+
+      /**
+       * Chama o template contribuicao_notificacao
+       */
+      $message_theme_body = array(
+        '#theme' => 'contribuicao_notificacao',
+        '#message_body' => $message_body,
+       );
+      
+      $message_render = \Drupal::service('renderer')->render($message_theme_body);
+      $message['body'][] = Html::escape($message_render);
+      $message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed;';
+      break;
+
+      case 'contribuicao_protocolo':
+        $message['from'] = \Drupal::config('system.site')->get('email');
+        $site_name = \Drupal::config('system.site')->get('nome');
+  
+        $message['subject'] = $site_name . ": " . t('Confirmação do Formulário de Contribuições');
+  
+        $message_body['protocolo'] = $params['message']['contribuicaoprotocolo'];
+        $message_body['nome'] = $params['message']['contribuicaonome'];
+        $message_body['texto'] = $params['message']['contribuicaotexto'];
+        $message_body['justificativa'] = $params['message']['contribuicaojustificativa'];
+        
+        /**
+         * Chama o template contribuicao_protocolo
+         */
+        $message_theme_body = array(
+          '#theme' => 'contribuicao_protocolo',
+          '#message_body' => $message_body,
+         );
+        
+        $message_render = \Drupal::service('renderer')->render($message_theme_body);
+        $message['body'][] = Html::escape($message_render);
+        $message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed;';
+        break;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function contribuicao_theme($existing, $type, $theme, $path) {
+  return [
+    'contribuicao_notificacao' => [
+      'variables' => ['message_body' => NULL],
+    ],
+    'contribuicao_protocolo' => [
+      'variables' => ['message_body' => NULL],
+    ]
+  ];
+}

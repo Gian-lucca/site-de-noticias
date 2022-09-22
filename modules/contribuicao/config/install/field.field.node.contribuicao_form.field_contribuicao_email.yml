@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contribuicao_email
+    - node.type.contribuicao_form
+id: node.contribuicao_form.field_contribuicao_email
+field_name: field_contribuicao_email
+entity_type: node
+bundle: contribuicao_form
+label: Email
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

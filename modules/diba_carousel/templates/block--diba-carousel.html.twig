@@ -1,0 +1,124 @@
+{#
+/**
+ * @file
+ * Default theme implementation for diba_carousel.
+ */
+#}
+<div{{ attributes.addClass(['block', 'diba-carousel']) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if elements.content.config.carousel_style == 'diba' %}
+    {{ attach_library('diba_carousel/diba-style') }}
+  {% endif %}
+
+  {% block content %}
+    {% set items_count = elements.content.items|length %}
+
+    {% if items_count > 0 %}
+      {% set items_by_slide = elements.content.config.items_by_slide %}
+      {% set slides_count = (items_count/items_by_slide)|round(0, 'ceil') %}
+      {% set data_interval = elements.content.config.data_interval %}
+
+      {% if data_interval == 0 %}
+        {% set data_interval = "false" %}
+      {% endif %}
+      <div id="{{ elements.content.id }}" class="carousel slide" data-ride="carousel" data-interval="{{ data_interval }}">
+
+        {# Carousel indicators #}
+        {% if slides_count > 1 and elements.content.config.show_indicators %}
+          <ol class="carousel-indicators">
+          {% for i in 0..slides_count-1 %}
+            <li data-target="#{{ elements.content.id }}" data-slide-to="{{ i }}"{% if loop.first %} class="active"{% endif %}></li>
+          {% endfor %}
+          </ol>
+        {% endif %}
+
+        <div class="carousel-inner">
+          {% set item_cols = 12 / items_by_slide %}
+          {% set item_slide = 0 %}
+
+          {# Carousel items #}
+          {% for item in elements.content.items %}
+            {% set item_slide = item_slide + 1 %}
+
+            {# Open carousel slide #}
+            {% if item_slide == 1 %}
+              <div class="item carousel-item{% if loop.first %} active{% endif %}">
+            {% endif %}
+
+              {# Open carousel cols #}
+              {% if items_by_slide > 1 %}
+                {% if item_slide == 1 %}<div class="row carousel-row">{% endif %}
+                <div class="col-sm-{{ item_cols }} carousel-col">
+              {% endif %}
+
+                {# Carousel image #}
+                {% if item.image %}
+                  {% if item.url_image %}<a href="{{ item.url_image }}">{% endif %}
+
+                  <img src="{{ file_url(item.image) }}" alt="{{ item.title|raw|striptags }}" width="{{ item.image_width }}" height="{{ item.image_height }}"{% if elements.content.config.image_class %} class="{{ elements.content.config.image_class }}"{% endif %}>
+
+                  {% if item.url_image %}</a>{% endif %}
+                {% endif %}
+
+                {# Carousel captation #}
+                {% if item.title or item.description %}
+                  <div class="carousel-caption">
+                    {% if item.title %}
+                      <h2 class="caption-title">
+                        {% if item.url %}
+                          {{ link(item.title|raw, item.url) }}
+                        {% else %}
+                          {{ item.title|raw }}
+                        {% endif %}
+                      </h2>
+                    {% endif %}
+                    {% if item.description %}
+                      <div class="caption-desc">{{ item.description|raw }}</div>
+                    {% endif %}
+                  </div>
+                {% endif %}
+
+              {# Close carousel cols #}
+              {% if items_by_slide > 1 %}
+                </div>
+                {% if loop.last or item_slide >= items_by_slide %}</div>{% endif %}
+              {% endif %}
+
+            {# Close carousel slide #}
+            {% if loop.last or item_slide >= items_by_slide %}
+              </div>
+              {% set item_slide = 0 %}
+            {% endif %}
+          {% endfor %}
+
+          {# Carousel controls #}
+          {% if slides_count > 1 and elements.content.config.show_controls %}
+            <div class="carousel-controls">
+              <a class="carousel-control-prev left carousel-control" href="#{{ elements.content.id }}" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">{% trans %}Previous{% endtrans %}</span>
+              </a>
+              <a class="carousel-control-next right carousel-control" href="#{{ elements.content.id }}" role="button" data-slide="next">
+                <span class="carousel-control-next-icon glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">{% trans %}Next{% endtrans %}</span>
+              </a>
+            </div>
+          {% endif %}
+
+        </div>
+      </div>
+
+      {# Carousel more link #}
+      {% if elements.content.config.more_link and elements.content.config.more_link_text %}
+        <div class="carousel-more-link">
+          {{ link(elements.content.config.more_link_text|t, elements.content.config.more_link, {'title': elements.content.config.more_link_text}) }}
+        </div>
+      {% endif %}
+    {% endif %}
+  {% endblock %}
+</div>

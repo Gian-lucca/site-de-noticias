@@ -1,0 +1,97 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contribuicao_form.field_contribuicao_protocolo
+    - field.field.node.contribuicao_form.field_contribuicao_email
+    - field.field.node.contribuicao_form.field_contribuicao_nome
+    - field.field.node.contribuicao_form.field_contribuicao_cpf
+    - field.field.node.contribuicao_form.field_contribuicao_orgao
+    - field.field.node.contribuicao_form.field_contribuicao_cargo
+    - field.field.node.contribuicao_form.field_contribuicao_minuta
+    - field.field.node.contribuicao_form.field_contribuicao_texto
+    - field.field.node.contribuicao_form.field_contribuicao_justificativa
+    - node.type.contribuicao_form
+  module:
+    - user
+id: node.contribuicao_form.default
+targetEntityType: node
+bundle: contribuicao_form
+mode: default
+content:
+  field_contribuicao_protocolo:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contribuicao_texto:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content   
+  field_contribuicao_email:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_contribuicao_nome:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contribuicao_cpf:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contribuicao_orgao:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contribuicao_cargo:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contribuicao_minuta:
+    weight: 110
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contribuicao_justificativa:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

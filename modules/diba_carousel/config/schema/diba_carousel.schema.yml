@@ -1,0 +1,93 @@
+block.settings.diba_carousel:
+  type: block_settings
+  label: 'Diba carousel slider block.'
+  mapping:
+    entity_selected:
+      type: string
+      label: 'Entity type'
+    content_types:
+      type: sequence
+      label: 'Content types'
+      nullable: true
+      sequence:
+        type: string
+        label: 'Content type'
+    publishing_options:
+      type: sequence
+      label: 'Publishing options'
+      nullable: true
+      sequence:
+        type: string
+        label: 'Publishing option'
+    skip_content_without_image:
+      type: boolean
+      label: 'Skip content without image'
+    image:
+      type: string
+      label: 'Image field'
+    title:
+      type: string
+      label: 'Title field'
+    image_style:
+      type: string
+      lable: 'Image style'
+    image_class:
+      type: string
+      lable: 'Image class'
+    image_multi_strategy:
+      type: string
+      lable: 'Image multiple value strategy'
+    url:
+      type: string
+      label: 'Title link'
+    url_image:
+      type: string
+      label: 'Image link'
+    description:
+      type: string
+      label: 'Description field'
+    description_allow_html:
+      type: boolean
+      label: 'Allow html description'
+    description_see_more_link:
+      type: boolean
+      label: 'Add see more link and the end of description'
+    description_truncate:
+      type: integer
+      label: 'Maximum number of characters in description field'
+    order_field:
+      type: string
+      label: 'Order by'
+    order_direction:
+      type: string
+      label: 'Order direction'
+    limit:
+      type: integer
+      label: 'Max number of elements'
+    filter_by_field:
+      type: string
+      label: 'Filter by field'
+    filter_by_field_operator:
+      type: string
+      label: 'Filter by field operator'
+    filter_by_field_value:
+      type: string
+      label: 'Field value for filter field'
+    carousel_style:
+      type: string
+      label: 'Carousel layout style'
+    show_indicators:
+      type: boolean
+      label: 'Show carousel indicators'
+    show_controls:
+      type: boolean
+      label: 'Show carousel controls'
+    more_link:
+      type: url
+      label: 'More link url'
+    more_link_text:
+      type: string
+      label: 'More link text'
+    data_interval:
+      type: string
+      label: 'The amount of time to delay between automatically cycling an item'

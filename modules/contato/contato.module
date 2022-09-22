@@ -1,0 +1,91 @@
+<?php
+/*
+|--------------------------------------------------------------------------
+| contato.module
+|--------------------------------------------------------------------------|
+| Arquivo é onde implementamos o layout que será enviado para o emails 
+| usuário
+| author Davi Bernardo <davi.santos@extreme.digital>
+| version 1.1
+| copyright Proderj 2021.
+*/
+
+/**
+ * @file
+ * Formulário de Contato
+ */
+
+use Drupal\Component\Utility\Html;
+
+/**
+ * Implements hook_mail().
+ */
+function contato_mail($key, &$message, $params) {
+  switch ($key) {
+    case 'contato_notificacao':
+      $message['from'] = \Drupal::config('system.site')->get('email');
+      $site_name = \Drupal::config('system.site')->get('nome');
+
+      $message['subject'] = $site_name . ": " . t('Novo Formulário de Contato');
+
+      $message_body['protocolo'] = $params['message']['contatoprotocolo'];
+      $message_body['nome'] = $params['message']['contatonome'];
+      $message_body['email'] = $params['message']['contatoemail'];
+      $message_body['telefone'] = $params['message']['contatotelefone'];
+      $message_body['sugestao'] = $params['message']['contatosugestao'];
+      $message_body['mensagem'] = $params['message']['contatomensagem'];
+      
+      /**
+       * Chama o template contato_notificacao
+       */
+      $message_theme_body = array(
+        '#theme' => 'contato_notificacao',
+        '#message_body' => $message_body,
+       );
+      
+      $message_render = \Drupal::service('renderer')->render($message_theme_body);
+      $message['body'][] = Html::escape($message_render);
+      $message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed;';
+      break;
+
+      case 'contato_protocolo':
+        $message['from'] = \Drupal::config('system.site')->get('email');
+        $site_name = \Drupal::config('system.site')->get('nome');
+  
+        $message['subject'] = $site_name . ": " . t('Confirmação do Formulário de Contato');
+  
+        $message_body['protocolo'] = $params['message']['contatoprotocolo'];
+        $message_body['nome'] = $params['message']['contatonome'];
+        $message_body['email'] = $params['message']['contatoemail'];
+        $message_body['telefone'] = $params['message']['contatotelefone'];
+        $message_body['sugestao'] = $params['message']['contatosugestao'];
+        $message_body['mensagem'] = $params['message']['contatomensagem'];
+        
+        /**
+         * Chama o template contato_protocolo
+         */
+        $message_theme_body = array(
+          '#theme' => 'contato_protocolo',
+          '#message_body' => $message_body,
+         );
+        
+        $message_render = \Drupal::service('renderer')->render($message_theme_body);
+        $message['body'][] = Html::escape($message_render);
+        $message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed;';
+        break;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function contato_theme($existing, $type, $theme, $path) {
+  return [
+    'contato_notificacao' => [
+      'variables' => ['message_body' => NULL],
+    ],
+    'contato_protocolo' => [
+      'variables' => ['message_body' => NULL],
+    ]
+  ];
+}

@@ -1,0 +1,70 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contato_form.field_contato_protocolo
+    - field.field.node.contato_form.field_contato_email
+    - field.field.node.contato_form.field_contato_telefone
+    - field.field.node.contato_form.field_contato_nome
+    - field.field.node.contato_form.field_contato_sugestao
+    - field.field.node.contato_form.field_contato_mensagem
+    - node.type.contato_form
+  module:
+    - user
+id: node.contato_form.default
+targetEntityType: node
+bundle: contato_form
+mode: default
+content:
+  field_contato_protocolo:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contato_sugestao:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content   
+  field_contato_email:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_contato_nome:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contato_telefone:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contato_mensagem:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

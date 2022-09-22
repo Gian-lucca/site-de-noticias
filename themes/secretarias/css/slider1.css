@@ -1,0 +1,43 @@
+/* SLIDE-LAYOUT */
+.slide1-wrap {margin: 0 auto; background-color:#dddddd;}
+
+.slide1-layout {/*height: 470px;*/ overflow: hidden; position: relative; margin:0 auto; background-color:white;}
+.slide1-layout img{width:100%;}
+.slide1-layout ul li {position: absolute; left: 0; top: 0; display: block; width: 100%; height: 100%; list-style: none;}
+
+/* SLIDER */
+.titulo {width: 100%; background: rgba(29, 29, 29, 0.72); position:absolute; color:#fff; padding:1.5em 2.5em; text-transform: uppercase;
+  bottom: 46;}
+.titulo h1{font-size:1.3em;}
+.imagem {width:100%;
+  height:90%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+
+.slide1 .dots {position: absolute; left: 0; right: 0; bottom: 10px; width: 100%; z-index: 3; text-align: center;}
+.slide1 .dots li {display: inline-block; margin: 0 10px; width: 20px; height: 20px; border: 2px solid #bbb;
+  border-radius: 50%; opacity: 0.4;	cursor: pointer; transition: background .5s, opacity .5s; list-style: none;}
+.slide1 .dots li.active {background: #bbb; opacity: 1;}
+
+.slide1-layout .arrow {position: absolute; z-index: 2; bottom: 90; left: 0; width: 100%; height: 100%;
+  transition: background .5s, opacity .5s;}
+.slide1-layout .arrow .arrow-left,
+.slide1-layout .arrow .arrow-right {position: absolute; top: 75%; margin-top: -25px; display: block; width: 50px; height: 50px;
+  cursor: pointer; opacity: 0.5; transition: background .5s, opacity .5s;}
+.slide1-layout .arrow  .arrow-left:hover,
+.slide1-layout .arrow  .arrow-right:hover {opacity: 1;}
+.slide1-layout .arrow .arrow-left {left: 20px; background: url("../imagens/arrow-left.png"); background-size: cover; background-position: center;}
+.slide1-layout .arrow .arrow-right {right: 20px; background: url("../imagens/arrow-right.png"); background-size: cover; background-position: center;}
+
+/* */
+@media (max-width: 860px){
+  .slide-wrap{width:100%;}
+/*  .titulo h1{font-size:0.8em;}
+*/
+}
+
+@media (max-width: 400px){
+  .slide1-layout{width:100%; height:500px;}
+}

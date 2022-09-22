@@ -1,0 +1,42 @@
+<h2><b>Formulário de Contribuições</b></h2>
+<p><b>Protocolo</b>: {{ message_body.protocolo }}</p>
+<p><b>Nome</b>: {{ message_body.nome }}</p>
+<p><b>E-mail</b>: {{ message_body.email }}</p>
+<p><b>CPF</b>: {{ message_body.cpf }}</p>
+<p><b>Orgão</b>: {{ message_body.orgao }}</p>
+<p><b>Cargo</b>: {{ message_body.cargo }}</p>
+<p><b>Contribuição</b>: {{ message_body.texto }}</p>
+<p><b>Minuta e Artigo</b>: {{ message_body.minuta }}</p>
+<p><b>Justificativa</b>: {{ message_body.justificativa }}</p>
+<p><b>Arquivo(s)</b>: 
+<style>
+/* unvisited link */
+a:link {
+  color: #006aa7;
+  text-decoration:none
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: #003757;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: #2c3e4c;
+} 
+</style>
+<ul>
+    {% for file in message_body.arquivo %}
+        <li><a href="{{ file[1] }}" target="_blank">{{ file[0] }}</a></li>
+    {% else %}
+        <li>Nenhum arquivo</li>
+    {% endfor %}
+    
+</ul>

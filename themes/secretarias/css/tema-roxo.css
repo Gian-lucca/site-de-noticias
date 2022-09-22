@@ -1,0 +1,849 @@
+/*comentario teste*/
+
+.cabecalho {
+    background: linear-gradient(90deg, #192844 67.81%, #472774 100%) !important;
+  }
+  
+  #edit-submit-busca {
+    color: #192844 !important;
+  }
+  
+  #edit-submit-busca--2 {
+    color: #192844 !important;
+  }
+  
+  /*header*/
+  .container-radio-redesocial {
+    display: flex;
+    margin-left: 36%;
+    width: 100%;
+  }
+  
+  /*LOGO*/
+
+  .rjlogorodape {
+    margin-left: 125%;
+    width: 80% !important;
+    margin-top: 5%;
+  }
+
+  .rj2030rodape {
+    max-width: 135px;
+    margin-top: 28%;
+  }
+  
+  .logoproderj-redes-wrap {
+    margin-left: 15px !important;
+  }
+  
+  .logo-rjgov {
+    display: flex;
+    max-width: 100%;
+    /* margin-left: 25px; */
+  }
+  
+  .logo-rjgov-img {
+    width: 100% !important;
+    margin: 1% 0% 0% 70%;
+  }
+  
+.logo-rjgov-img2 {
+  width: 80%;
+  margin: -5% 0px 12% -100%;
+}
+  
+  /*MENU-SUPERIOR*/
+  .menu-superior {
+    background: linear-gradient(90deg, #192844 67.81%, #472774 100%) !important;
+  }
+  
+  .infosup li {
+    border-right: solid 2px #39bbc7 !important;
+    padding-right: 10px !important;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 4px;
+  }
+  
+  .infosup li:last-child {
+    border-right: none !important;
+  }
+  
+  .menusupi {
+    width: 97% !important;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end !important;
+    padding-bottom: 3px;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+  }
+  
+  /*ROCKET*/
+  
+  #atl-player {
+    width: 200px;
+    display: flex;
+    margin: -5px 0px 5px 5px;
+    border-radius: 5px;
+    background-color: #192844;
+    align-items: center;
+  }
+  
+  #atl-player a {
+    width: 35px;
+    height: 35px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    outline: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #atl-player a .overlayer {
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+    /* line-height: 50px; */
+    opacity: 1;
+    transition: opacity .5s;
+    border-radius: 5px 0px 0px 5px;
+  }
+  
+  #atl-player h3 {
+    color: #fff;
+    font-size: 7.2px;
+    text-transform: uppercase;
+  }
+  
+  #atl-player .text h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #atl-player h2 {
+    color: #fff;
+    font-size: .7em;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 0.5;
+  }
+  
+  .text {
+    overflow: hidden;
+    padding: 2px 0 2px 5px;
+    width: 150px;
+  }
+  
+  
+  
+  .overplayer {
+    width: 35px !important;
+    height: 35px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #442771 !important;
+    text-align: center !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+  
+  
+  
+  .iconplay {
+    width: 19px;
+    height: auto;
+    padding: 3px;
+    margin-left: 18%;
+    margin-top: 10%;
+  }
+  
+  .iconpause {
+    width: 19px;
+    height: auto;
+    padding: 3px;
+    margin-left: 18%;
+    margin-top: 10%;
+  }
+  
+  #atl-player {
+    width: 190px;
+    margin: 5px 0px 5px 5px;
+    display: flex;
+    border-radius: 5px;
+    background-color: #192844;
+    align-items: center;
+  }
+  
+  /*SLIDER PRINCIPAL*/
+
+  .link-banner{
+    color: transparent;
+  }
+  
+  #flexslider-1.flexslider.optionset-default .views-field.views-field-field-link-slider-principal a{
+    width: 100%;
+    background: rgba(29, 29, 29, 0.72);
+    position: absolute;
+    font-weight: bold;
+    line-height: 2em;
+    color: #05F2F2;
+    padding: 1.5em 2.5em;
+    text-transform: uppercase;
+    min-height: 115px;
+    margin-top: -8.3%
+  }
+
+  img.image-style-slider-principal-1920x400 {
+    height: 450px !important;
+  }
+
+  .titulo-slider-principal a{
+    font-weight: bold;
+    line-height: 2em;
+    color: #05F2F2;
+    text-transform: uppercase;
+  }
+  
+  #flexslider-1.flexslider.optionset-default .views-field.views-field-field-link-conteudo a{
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    padding: 1.5em 2.5em;
+    text-transform: uppercase;
+    margin-top: -8.3%;
+    min-height: 115px;
+    display: flex;
+    font-weight: 100;
+    align-items: center;
+  }
+  
+  .lista-noticias {
+    background-color: #192844 !important;
+    height: 45px;
+    margin-top: 3%;
+   }
+
+   .lista-noticias a{
+    color: #05F2F2;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .lista-noticias a:hover
+    {
+      color: white;
+          
+      }
+  
+  
+  .acesso-informacao {
+    background: linear-gradient(90deg, #192844 67.81%, #472774 100%) !important;
+  }
+  
+  .boxes-acesso article {
+    background: #594f9f;
+  }
+  
+  .menu-overlay .closebtn {
+    color: #192844 !important;
+  }
+  
+  .form-select {
+    background-color: #462773 !important;
+  }
+  
+  .button:hover {
+    margin-left: 0 !important;
+    margin-top: 15px;
+    background-color: #0f1b32 !important;
+  }
+  
+  .botao-aplicar .button {
+    background-color: #462773 !important;
+  }
+  
+  .botao-aplicar .button .image-button {
+    background-color: #462773 !important;
+  }
+  
+  .botao-aplicar,
+  .button,
+  .image-button {
+    background-color: #462773 !important;
+  }
+  
+  .views-field-title>span>a {
+    color: #363636 ;
+    line-height: 1.2 ;
+    font-weight: 700 ;
+    font-size: 1.5em ;
+  }
+  
+  .footer {
+    background: linear-gradient(90deg, #192844 67.81%, #472774 100%) !important;
+    height: 146px;
+  }
+  
+  /*ESTRUTURA*/
+  .section-container.estrutura {
+    width: 79% !important;
+  }
+  
+  .estrutura .flex-viewport .slides li {
+    width: 210px !important;
+    height: 100px !important;
+    margin-right: 3px !important;
+    float: left;
+    background: #594f9f;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .views-field.views-field-field-link-estrutura .field-content.link-slider-links-uteis a {
+    width: 210px;
+    position: absolute;
+    left: -137px;
+    top: -60px;
+    text-align: center;
+    padding: -60px 0;
+    padding: 43px 0px;
+  }
+  
+  .estrutura .field-content.link-slider-links-uteis a {
+    color: transparent;
+  }
+  
+  .estrutura .views-field-title>span>a {
+    color: #ffffff !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+  }
+  
+  .todas-noticias img {    
+    max-width: 100%;
+  }
+  .estrutura .flexslider:hover .flex-direction-nav .flex-prev {
+    left: 18px !important;
+    padding: 0 10px;
+}
+
+  .estrutura .flexslider:hover .flex-direction-nav .flex-next {
+  right: 16px !important;  
+  padding: 0 10px;
+}
+
+
+#flexslider-3 .flex-viewport .slides li {
+  width: 230px !important;
+  margin-right: 10px !important;
+}
+
+#flexslider-2 .flex-viewport{
+  overflow: hidden;
+  position: relative;
+  height: 540px;
+  width: 800px;
+
+}
+  
+
+  
+/*SERVIÇOS*/
+
+#flexslider-4 ul li {
+  width: 300px;
+  height: auto;
+  margin-right: 15px !important;
+}
+  
+#flexslider-4 .link-slider-links-uteis a {
+  position: relative;
+  left: 29px;
+  width: 24px !important;
+  padding: 43px 95px;
+}
+
+.logo2 {
+  margin-left: 65px;
+}
+
+#flexslider-2.flexslider.optionset-thumbnail-slider img {
+  background-size: cover;
+  position: unset;
+  object-fit: unset;
+  top: 0;
+  left: 0;
+  transform: none;
+  min-height: 100%;
+  border-radius: 10px;
+} 
+
+.instagram-sup {
+  background: url(../imagens/inst.svg) no-repeat center center !important;
+  background-size: cover;
+}
+
+.facebook-sup {
+  background: url(../imagens/face.svg) no-repeat center center !important;
+  background-size: cover;
+}
+
+.twitter-sup {
+  background: url(../imagens/twt.svg) no-repeat center center !important;
+  background-size: cover;
+}
+
+.youtube-sup {
+  background: url("../imagens/linkd.svg") no-repeat center center !important;
+  background-size: cover;
+}
+
+
+.icons {
+  width: 27px;
+  height: 30px;
+  text-indent: -9999px;
+  display: block;
+}
+
+.views-field-field-link-slider-principal{
+position: relative;
+top: -42px;
+}
+
+.views-field.views-field-field-link-conteudo .field-content{
+  position: relative;
+  top: -31px;
+
+}
+
+.banner-principal {
+    
+  position: relative;
+  top: -51px;
+  
+}
+
+.titulo-pe {
+  border-bottom: 2px solid grey;
+  margin-bottom: 2%;
+    margin-left: 3%;
+    width: 93%;
+    font-weight: bold;
+  }
+
+  .titulo-pe span{
+    font-size: 20px;
+  }
+
+  .social-midia-sup li {
+    list-style: none;
+    display: inline-block;
+    width: 25px;
+    margin: 6px;
+}
+
+
+.salario-gride.views-col.col-1{
+  display: flex;
+    position: relative;
+    left: -50px;
+    margin-left: -12%;
+    width: 25%;
+    padding: 0% 2% 2% 4%;
+    margin-inline-start: -17%;
+} 
+
+
+
+.views-view-grid.horizontal.cols-3.clearfix{
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  padding: 0;
+  display: flex;
+  margin: 40px auto 0px;
+  width: 95%;
+    
+}
+
+.views-label.views-label-field-assunto-noticias {
+  font-weight: bold;
+  color: #068989;
+
+
+}
+  
+.container-radio-redesocial{
+  position: relative;
+  right: 52px;
+
+}
+
+.flex-next {
+  position: relative;
+  left: 1114px;
+  top: -254px;
+}
+
+.flex-prev {
+  position: absolute !important;
+}
+
+.p p{
+  margin-inline-start: 35px;
+
+}
+
+
+iframe {
+  width: 100%;
+  height: 600px;
+}
+
+.banner-principal img {
+  width: 100%;
+  margin: 3% 5px 0px 21%;
+  height: 100%;
+}
+
+.titulo-secao {
+    
+  margin: 29px 5px 30px 20px;
+  
+}
+
+.indice-gride.views-col.col-2{
+width: 25%;
+margin-left: 11%;
+}
+
+
+.salario-gride.views-col.col-1 {
+  
+  margin-inline-start: -11%;
+}
+
+.salario-gride.views-col.col-2 {
+width: 25%;
+margin-left: 11%;
+}  
+
+.youtube-frame.views-col.col-1{
+  width: 73% !important;
+  margin-right: -10%;
+  }
+
+  .pib-gride.views-col img{
+  
+    border-radius: 25px;
+    }
+
+    .indice-gride.views-col img {
+
+      border-radius: 25px;   
+     }
+    
+    .salario-gride.views-col img {
+      
+      border-radius: 25px;   
+     }
+
+    
+
+  .flex-nav-next {
+    right: 103%;
+    position: absolute;
+    top: 25%;
+}
+
+.flex-nav-prev {
+  right: 99%;
+  position: absolute;
+  top: 20%;
+}
+
+@media screen and (min-device-width: 1845px) and (max-device-width: 1960px){
+  .views-field-field-link-slider-principal {
+    position: relative;
+    top: 3px;
+}
+
+.views-view-grid.horizontal.cols-4.clearfix
+{
+    margin-inline-start: 21%;
+    margin-inline-end: 22%;
+}
+
+
+  
+.flex-nav-prev{
+      right: 93%;
+      
+      position: absolute;
+      top: 20%;
+  }
+  
+  .flex-nav-next{
+      right: 88%;
+      position: absolute;
+      top: 20%;
+  }
+
+.titulo-pe {
+  border-bottom: 2px solid grey;
+  margin-bottom: 2%;
+  margin-left: 12%;
+  width: 72%;
+  font-weight: bold;
+}
+
+.indice-gride.views-col.col-2 {
+
+  margin-left: 13%;
+}
+
+.salario-gride.views-col.col-2 {
+  
+  margin-left: 13%;
+}
+
+
+#flexslider-1.flexslider.optionset-default .views-field.views-field-field-link-conteudo a {
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    padding: 1.5em 2.5em;
+    text-transform: uppercase;
+    margin-top: -5.3%;
+    min-height: 115px;
+    display: flex;
+    font-weight: 100;
+    align-items: center;
+}
+
+
+.field-content {
+    margin-bottom: 10px;
+    position: relative;
+    top: 0px;
+}
+          
+
+.views-view-grid.horizontal.cols-3.clearfix {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    padding: 11px;
+}
+
+.cabecalho {
+    height: 172px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background: #44773a;
+}
+
+.logo-rjgov-img2 {
+    width: 80%;
+    margin: -9% 0px -16% -100%;
+}
+
+.noticia-principal-gride.views-col.col-1{
+  width: 33.333333333333%;
+  
+  }
+
+  .noticia-principal-gride.views-col.col-2{
+    width: 33.333333333333%;
+    padding: 1% 1% -1% 10%;
+    margin-inline-start: 9%;
+    margin-inline-end: 10%;
+  }
+
+}
+
+
+@media (max-width: 820px) {
+
+  .footer {
+    width: 100%;
+    position: relative; /*bottom:0; display: block;*/
+    background: #00508a;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .endereco {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .logo-rjrodape {
+    width: 40%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  img.image-style--slider-secundario-1920x400 {
+    height: 220px !important;
+  }
+  
+  .views-field.views-field-field-presidente .field-content p {
+    width: 587px;
+  }
+  
+  li.icons-endereco {
+    word-break: break-all;
+    width: 100%;
+  }
+
+  section.programas-acoes.branco.aos-init.aos-animate {
+    margin-top: 100px;
+  }
+  
+}
+  
+@media (min-width: 600px) {
+  [data-aos^="fade"][data-aos^="fade"].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+  
+  
+@media (max-width: 450px) {
+  
+  .contextual-region.view.view-endereco-rodape.view-id-endereco_rodape.view-display-id-block_1.js-view-dom-id-e16f9e84d8de8d21d5fb43c3f530c4ab780c89ce78395bad1aa68e07533aa537 {
+    width: 200px;
+  }
+  
+  .container-radio-redesocial {
+    display: flex;
+    margin-left: -9%;
+    position: relative;
+    left: -11%;
+  
+  }
+
+  .form--inline.clearfix {
+    width: 80%;
+    position: relative;
+    top: 10px;
+    left: 100px;
+  }
+  
+  #hambtn {
+    position: relative;
+    left: -1%;
+    margin-top: -10px;
+    bottom: -32%;
+  }
+
+  .container-radio-redesocial {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  img.image-style-imagem-307-x-100 {
+    width: 257px !important;
+  }
+  
+  img.image-style-slider-principal-1920x400 {
+    height: 250px !important;
+  }
+  
+  .field-content p {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .section-wrap.aos-init.aos-animate {
+    position: relative;
+    left: 0px;
+  }
+  
+  li.icons-endereco {
+    word-break: break-all;
+    width: 100%;
+  }
+  
+  .views-field.views-field-field-presidente .field-content p {
+    width: 270px;
+  }
+  
+  h1.field-content {
+    width: 250px;
+    margin: 0 auto !important;
+  }
+  
+  .acesso-informacao {
+    padding: 50px 0;
+  }
+  .nome-secretaria {
+    margin: 0px;
+    position: relative;
+    left: 55px;
+  }
+  
+  .social-midia-proderj {
+    margin: -1% 0 5% 0% !important;
+  }
+
+}
+
+@media (max-width: 375px) {
+  
+  .nome-secretaria {
+    width: 100%;
+    margin-left: -70px;
+  }
+  
+  .logo-rjgov-img2 {
+    width: 72%;
+    margin: 10px 0px 0px -45%;
+  }
+  
+  .logo-rjgov-img {
+    width: 80% !important;
+    margin-left: -46px;
+  }
+  
+  .container-radio-redesocial {
+    margin-left: 4% !important;
+  }
+
+  .social-midia-proderj {
+    margin: 2% 0 0% 0% !important;
+  }
+
+}

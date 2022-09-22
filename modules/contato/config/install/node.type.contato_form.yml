@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - contato
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Contact Us Form'
+type: contato_form
+description: 'This content type contains data of all contact us form submissions.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

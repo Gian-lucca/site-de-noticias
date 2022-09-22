@@ -1,0 +1,1443 @@
+/*Author Luiz Felipe Diogo F. Silva <luiz.felipe@proderj.rj.gov.br>
+ copyright Proderj 2022.*/
+
+/* Correção Estrutura */
+.image-style-imagem-310x100{
+    width: 95%;
+    margin: 0 0 0 5%;
+    height: auto;
+}
+
+.views-field-field-imagem-estrutura{
+    margin: 0 22%;
+}
+
+/* Cor pag noticia */
+.lista-noticias {
+    background-color: #44773a;
+}
+
+/* Removendo Barra de Rolagem Lateral */
+[data-aos=fade-left] {
+    transform: translate3d(0,0,0)!important;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+    left: 5%;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+    right: 5%;
+}
+ /*Teste AltPlayer */
+a[controls]{
+
+    background-color: rgba(95, 95, 95, 0.25);
+    color: #fff;
+    
+}
+
+#atl-player {
+    background-color: #404040;
+    width: 190px;
+    margin: 5px 0px 5px 5px;
+    display: flex;
+    border-radius: 5px;
+
+}
+
+#atl-player a {
+    width: 35px;
+    height: 35px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    outline: 0!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#atl-player a .overlayer {
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(95, 95, 95, 0.25);
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+    /* line-height: 50px; */
+    opacity: 1;
+    transition: opacity .5s;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#atl-player h3 {
+    color: #959595;
+    font-size: .54em;
+    text-transform: uppercase;
+}
+
+#atl-player .text h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+#atl-player h2 {
+    color: #fff;
+    font-size: .7em;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 0.5;
+}
+
+.text {
+    overflow: hidden;
+    padding: 2px 0 2px 5px;
+    width: 150px;
+}
+
+.play{
+    width: 35px;
+    height: 35px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    outline: 0!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlayer{
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(95, 95, 95, 0.25);
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+    /* line-height: 50px; */
+    opacity: 1;
+    transition: opacity .5s;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+
+/* Rodapé Endereço*/
+.endereco {
+	/* margin: 0 auto; */
+}
+
+
+/* Botão Close menu Hamburguer - VERDE */
+
+.menu-overlay .closebtn {
+    font-size: 4em;
+    color: #44773a;
+}
+
+ /* Correção Títulos Duplicados*/
+
+
+.page-title span {
+    width: 100% !important;
+    display: none !important;
+}
+
+.page-title {
+    display: none!important;
+}
+
+/* Cabeçalho */
+
+.logo-proderj {
+    display: none;
+}
+
+.nome-secretaria{
+    /* margin-right: 10%; */
+    /* width: 30%; */
+}
+.nome-secretaria-conteudo{
+    color: white;
+    font-size: 15px;
+}
+
+
+.logo-rjgov{
+    width: 30%;
+    
+}
+
+
+.logo-rjgov-img{
+    width: 80%;
+    /*margin-left: -25%;*/
+}
+
+.section-container#cabecalho {
+    width: 96%;
+    margin: 0 0 0 7%;
+    /* width: 86%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+/* Noticias 3 col Titulos */
+
+.noticia-principal-gride h2 a {
+    color: #363636 ;
+    line-height: 1.2 ;
+    font-weight: 700 ;
+    font-size: 1.5em ;
+}
+
+.programas-acoes .branco .aos-init .aos-animate{
+    display: none;
+}
+
+/* Todos os Texto das noticias */
+.views-field>div>p>span {
+    margin-top: 10px;
+    line-height: 1.4;
+    font-family: verdana, geneva, sans-serif;
+}
+
+/*Noticias 2 col Titulos*/
+
+.noticia-2col-wrap .view-content .views-view-grid .views-row .noticia-principal-gride .views-field-title .field-content a {
+    color: #363636;
+    line-height: 2.0;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: arial;
+}
+.views-field-title>span>a{
+    color: #44773a ;
+    line-height: 1 ;
+    font-weight: 700 ;
+    font-size: 1.5em ;
+}
+
+.noticia-2col-wrap .view-content .views-view-grid .views-row .noticia-principal-gride img{
+    /*width: 600px;
+    height: 400px;
+    padding: 10px;*/
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.noticia-principal-gride {
+    width: 35%;
+}
+
+.noticia-2col-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px;
+    width: auto;
+    padding: 25px 0px 25px 0px;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+.views-field-views-field-field-tags-noticias>div>a {
+    margin-bottom: 10px;
+}
+
+.section-container {
+    padding: 0px;
+}
+
+/*Logo Rodapé*/
+.site-logo>img {
+    width: 240px;
+    height: 46px;
+}
+/*Logo Cabeçalho*/
+.logo-proderj.logo>a>img{
+    width: 290px;
+    height: 60px;
+}
+
+.cards-container-wrap .banner-principal{
+margin-bottom: 50px;
+}
+
+.titulo-secao{
+    color: #333333;
+    padding: 10px 0px 0px 15px;
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 15px 5px 30px 20px;
+    text-transform: uppercase;
+    line-height: 1.334;
+    letter-spacing: 0em;
+    display: flex;
+}
+
+.titulo-secao span{
+    color: #333333;
+}
+
+.titulo-secao span::after {
+    width: 4px;
+    bottom: 11px;
+    height: 30px;
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: -14px;
+    background-color: #05F2F2;
+}
+
+/* RODAPÉ VERDE */
+.footer {
+    background: #44773a !important;
+    margin-top: 40px;
+}
+
+/* SEÇÃO NOTICIAS 3 COLUNAS  */
+
+.views-row {
+    width: 97% !important;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 0px 0px 0px;
+    margin-left: 3%;
+  }
+  
+  .noticia-principal{
+    margin-left: 80px;
+    margin-right: 50px;
+  }
+  
+  .views-view-grid {
+      margin-top: 0px;
+  }
+  .noticias .section-container .titulo-secao{
+   display:none;
+  }
+
+  .telefones-uteis-linha{
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between;
+    }
+
+  .telefones-uteis-wrap a {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    line-height: 2;
+  }
+  .md-content-telefones > p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 900;
+    color: #00508A;
+    line-height: 1.2em;
+    text-align: left;
+  }
+
+  .telefones-uteis-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: inherit;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.telefones-uteis-wrap button{
+    margin: 8px 8px;
+    border-radius: 5px;
+    background-color: #dddddd;
+    color: #363636;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 12px 12px;
+    cursor: pointer;
+    border: none;
+}
+
+.image-style-imagem-noticias-481x350 {
+    width: 300px;
+    height: 200px;
+}
+
+.logo-pesagro-card {
+    width: 150px;
+    height: 29px;
+    background-image: url('/../../../sites/site_pesagro/files/2021-09/logo-pesagro-rio_az.png');
+    background-size: contain;
+    margin-bottom: 6px;
+}
+
+.flexslider .slides img {
+    height: auto;
+    -moz-user-select: none;
+    margin-bottom: 40px;
+}
+.button:hover{
+
+    margin-left: 0 !important;
+    margin-top: 15px;
+    background-color: #106c22 !important;
+    color: #fff !important;
+    padding: 4px !important;
+
+}
+
+.form-select{
+
+    padding: 4px !important;
+    background-color: #44773a !important;
+    color: #fff !important;
+    border: 0 !important;
+
+}
+
+.botao-aplicar, .button, .image-button{
+    
+    margin-right: 1em !important;
+    margin-left: 0 !important;
+    margin-top: 15px;
+    background-color: #44773a !important;
+    color: #fff !important;
+    padding: 4px !important;
+    border: 0 !important;
+}
+/*.botao-buscar, .button, .image-button{
+    
+    margin-right: 1em !important;
+    margin-left: 0 !important;
+    color: #00508a !important;
+    padding: 4px !important;
+    border: 0 !important;
+}*/
+/*
+.flex-direction-nav a{
+
+    top: 40% !important;
+}
+*/
+.flex-direction-nav a {
+    text-decoration: none;
+    display: block;
+    width: min-content !important;
+    height: 40px;
+    margin: -20px 0 0 !important;
+  /*  position: fixed !important;
+    top: 174px !important;
+    */
+    z-index: 10;
+    overflow: hidden;
+    opacity: unset;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 0 rgb(255 255 255 / 30%);
+    -webkit-transition: all 0.3s ease-in-out;
+   /*
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    */
+    margin-right: 92px !important;
+    margin-left: 90px !important;
+}
+
+.link-slider-links-uteis{
+    color: #fff !important;
+    position: absolute !important;
+    z-index: 9999 !important;
+    bottom: 20px !important;
+    text-transform: revert !important;
+    font-size: 35px !important;
+    background: transparent !important;
+}
+
+.link-slider-links-uteis a {
+    position: relative;
+    top: -48px;
+    color: transparent !important;
+    font-size: 1px !important;
+    margin-right: 34px !important;
+    padding: 48px 163px;
+}
+
+.menu-column li{
+    white-space: nowrap !important;
+}
+
+.menu-column{
+    margin-left: 40px;
+}
+
+.lista-links{
+    display: none;
+}
+@media only screen and (min-width: 1104px) and (max-width: 1450px){
+    .logo-rjgov-img {
+        width: 90%;
+        
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1103px){
+
+    /* Index */
+    .dots{
+        left: 86%;
+    }
+    .index-noticias h2{
+        font-size: 18px;
+    }
+    .cabecalho-cinza{
+        height: 100px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .cabecalho-cinza-completo{
+        display: block;
+    }
+    .linkGoverno-redesSociais{
+        display: block;
+        padding-top: 0px;
+    }
+    .cabecalho-azul-completo{
+        display: block;
+    }
+    .cabecalho-azul-completo-esquerda{
+        margin: 10px 0px;
+        justify-content: center;
+    }
+    .cabecalho-azul-direita{
+        margin: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cabecalho-azul-direita-redesSociais{
+        margin-left: 30px;
+    }
+    #linkGoverno{
+        padding: 0px 0px 0px 0px;
+    }
+    .index-redesSociais{
+        padding-top: 5px;
+    }
+    .links{
+        display: block;
+        padding-top: 5px;
+    }
+    #close{
+        position: relative;
+        
+    }
+    .menu-row{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 30px 0px 50px 0px;
+        display: block;
+    }
+    .menu-column{
+        margin: auto;
+        display: block;
+        margin-top: 15px;
+    }
+    .index-noticias1{
+        display: block;
+        padding-top: 30px;
+    }
+    .index-noticias1-noticia{
+        width: 100%;
+    }
+    .index-noticias h3{
+        padding-top: 20px;
+    }
+    .index-noticias2{
+        display: block;
+    }
+    .index-noticias2-noticia {
+        width: 100%;
+    }
+    .index-noticias p {
+        margin-bottom: 20px;
+    }
+    .transparencia-completa{
+        display: block;
+    }
+    .transparencia-esquerda{
+        width: 100%;
+    }
+    .transparencia-direita{
+        width: 100%;
+    }
+    .transparencia-direita-quadrado {
+        height: 130px;
+        width: 130px;
+        margin-top: 10px;
+    }
+    /* Boletos */
+    .input-botao{
+        width: 70%;
+    }
+    .tabela {
+       display: block;
+       position: relative;
+        width: 600px;
+        margin: 50px auto;
+    }
+    .tabela thead, .tabela tbody, .tabela th, .tabela td, .tabela tr {
+        display: block;
+    }
+    .tabela td, .tabela th {
+        height: 35px;
+        width: 120px;
+    }
+    #boletos-empresa{
+        width: 82%;
+    }
+    #boletos-campos{
+        width: 82%;
+    }
+    #boletos-tipo{
+        width: 82%;
+    }
+    .tabela thead {
+        float: left;
+    }
+    .tabela tbody {
+        width: 468px;
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+    .tabela tbody tr {
+        display: inline-block;
+        width: 121px;
+    }
+
+    /* Noticias */
+
+    .noticias-cards-completo {
+        display: block;
+        height: auto;
+    }
+    .noticias-cards-img {
+        width: 100%;
+    }
+    .noticias-cards-textos {
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    /* perfil presidente */
+
+    .presidente-img-texto-completo{
+        display: block;
+    }
+    .presidente-img{
+        width: 100%;
+        height: auto;
+    }
+    .presidente-textos{
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    /*serviço informacao*/
+    .servicoInformacaoCidadao-cards{
+        display: block;
+    }
+    .servicoInformacaoCidadao-card{
+        width: 100%;
+    }    
+}
+@media only screen and (min-width: 547px) and (max-width: 699px){
+    .index-noticias h2{
+        font-size: 18px;
+    }
+    .dots{
+        left: 85%;
+    }
+    .cabecalho-cinza{
+        height: 100px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .cabecalho-cinza-completo{
+        display: block;
+    }
+    .linkGoverno-redesSociais{
+        display: block;
+        padding-top: 0px;
+    }
+    .cabecalho-azul-completo{
+        display: block;
+    }
+    .cabecalho-azul-completo-esquerda{
+        margin: 10px 0px;
+    }
+    .cabecalho-azul-direita{
+        margin: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cabecalho-azul-direita-redesSociais{
+        margin-left: 30px;
+        justify-content: center;
+    }
+    #linkGoverno{
+        padding: 0px 0px 0px 0px;
+    }
+    .index-redesSociais{
+        padding-top: 5px;
+    }
+    .links{
+        display: block;
+        padding-top: 5px;
+    }
+    .rodape-completo{
+        width: 100%;
+    }
+    #rodape-logo-proderj{
+        height: 55px;
+        padding-right: 10px;
+    }
+    #rodape-logo-governo{
+        height: 75px;
+        padding: 0px 0px 0px 10px;
+    }
+    #close{
+        position: relative;
+      
+    }
+    .menu-row{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 30px 0px 50px 0px;
+        display: block;
+    }
+    .menu-column{
+        margin: auto;
+        display: block;
+        margin-bottom: 15px;
+        
+    }
+    .index-noticias1{
+        display: block;
+        padding-top: 30px;
+    }
+    .index-noticias1-noticia{
+        width: 100%;
+    }
+    .index-noticias h3{
+        padding-top: 20px;
+    }
+    .index-noticias2{
+        display: block;
+    }
+    .index-noticias2-noticia {
+        width: 100%;
+    }
+    .index-noticias p {
+        margin-bottom: 20px;
+    }
+    .transparencia-completa{
+        display: block;
+    }
+    .transparencia-esquerda{
+        width: 100%;
+    }
+    .transparencia-direita{
+        width: 100%;
+    }
+    .transparencia-direita-quadrado {
+        height: 130px;
+        width: 130px;
+        margin-top: 10px;
+    }
+    /* Boletos */
+    #flex{
+        display: block;
+    }
+    #flex-filha{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .btn{
+        margin-left: 20px;
+    }
+    .input-botao{
+        width: 70%;
+    }
+    .dataTables_filter label{
+        display: none;
+    }
+    .tabela {
+        display: block;
+        position: relative;
+        width: 470px;
+        margin: 50px auto;
+    }
+    .tabela thead, .tabela tbody, .tabela th, .tabela td, .tabela tr {
+        display: block;
+    }
+    .tabela td, .tabela th {
+        height: 35px;
+        width: 120px;
+    }
+    #boletos-empresa{
+        width: 82%;
+    }
+    #boletos-campos{
+        width: 82%;
+    }
+    #boletos-tipo{
+        width: 82%;
+    }
+    .tabela thead {
+        float: left;
+    }
+    .tabela tbody {
+        width: 338px;
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+    .tabela tbody tr {
+        display: inline-block;
+        width: 121px;
+    }
+    /* acoesProgramas */
+
+    .acoesProgramas-input-btn{
+        display: block;
+    }
+    #acoesProgramas-input {
+        width: 100%;
+    }
+    .acoesProgramas-btn{
+        margin: 10px 0px 0px 0px;
+    }
+    /* Noticias */
+
+    .noticias-cards-completo {
+        display: block;
+        height: auto;
+    }
+    .noticias-cards-img {
+        width: 100%;
+    }
+    .noticias-cards-textos {
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    /* perfil presidente */
+
+    .presidente-img-texto-completo{
+        display: block;
+    }
+    .presidente-img{
+        width: 100%;
+        height: auto;
+    }
+    .presidente-textos{
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    /*serviço informacao*/
+    .servicoInformacaoCidadao-cards{
+        display: block;
+    }
+    .servicoInformacaoCidadao-card{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 630px){
+
+    /*Coreção Imagem Estrutura*/
+    .image-style-imagem-310x100{
+        width: 280%;
+        margin: 0 0 0 5%;
+        height: auto;
+    }
+
+   /* .flex-direction-nav .flex-prev {
+        opacity: 1;
+        left: 10px;
+        margin-top: 60px !important;
+    }
+
+    .flex-direction-nav .flex-next {
+        margin-top: 60px !important;
+    }*/
+	
+    /* Cabeçalho */
+    
+    .section-container#cabecalho {
+        height: 350px;
+        padding: 0; 
+        width: 100%
+    }
+
+    .nome-secretaria {
+        /* margin: 50px 5% 0 0; */
+        width: 100%;
+        
+    }
+    .logo-rjgov-img {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .logo-rjgov {
+        width: 75%;
+        margin: 13px 0 7px 8%;
+    }
+
+    #edit-busca {
+        height: 30px;
+        border: none;
+        font-size: 10pt;
+        float: left;
+        padding-left: 0px;
+        width: 190%;
+        webkit-border-radius: 10px 0px 0px 10px;
+        -moz-border-radius: 10px 0px 0px 10px;
+        border-radius: 10px 0px 0px 10px;
+        margin-top: 10px;
+    }
+    
+    .social-midia-proderj {
+        width: 100% !important;
+        display: block !important;
+        /* margin: 0 0 73px 18%; */
+    }
+    
+    #hambtn {
+        position: relative;
+        left: 3%;
+        margin-top: 21px;
+        bottom: 15%;
+    }
+
+    /* Slider Principal*/
+    .image-style-imagem-1349x400{
+        height: 182px !important;
+    }
+
+
+    /* Pagina de Noticias */
+
+    .noticia-gride {
+            border-bottom: 1px solid rgb(155,155,154);
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+    }
+    
+    .noticia-gride .data-criacao {
+        float: none !important;
+        white-space: nowrap;
+    }
+
+    
+    .noticia-principal-gride .conteudo-gride{
+        display: inline-block;
+        width: 250%;
+    }
+
+    .logo-branco-rodape{
+        margin-left: -26px;
+    }
+
+    .logo-proderj-fixo {
+        width: 134px!important;
+        height: 45px!important;
+        /* margin-top: 30px!important; */
+        background: url(/sites/casa-civil/themes/secretarias/imagens/logo-proderj.png) no-repeat;
+    }
+
+    .views-view-grid .views-row {
+        float: left;
+        clear: both;
+        width: 100%;
+    }
+    
+    .views-view-grid .views-col {
+        float: none;
+        margin-bottom: 8px;
+        width: 100% ;
+        margin-right: -30px;
+    }
+    
+    .views-row {
+        display: block;
+        /* justify-content: space-between; */
+        
+        padding: 25px 0px 0px 0px;
+    }
+    
+    /* Flex Direction NAV */
+    .flex-direction-nav a {
+        top: 78px !important;
+      
+    }
+    
+    .flex-direction-nav a:before {
+        font-family: "flexslider-icon";
+        font-size: 40px;
+        display: inline-block;
+        content: '\f001';
+        color: rgb(206 201 201 / 80%);
+        text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
+        /* bottom: 10%; */
+    }
+    
+    
+
+    /* PÁGINA DE NOTÍCIAS CSS RESPONSIVIDADE */
+    .views-field-title > span > a {
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .noticia-gride img {
+        width: 120%!important;
+        height: auto;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .noticia-gride p {
+        text-align: justify;
+        width: 100%;
+    }	
+
+    .noticia-gride {
+        border-bottom: 1px solid rgb(155,155,154);
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .noticia-gride a {
+        color: #00508a !important;
+        display: block;
+        /* text-align: center; */
+        width: 100%;
+    }
+    
+    .banner-principal img {
+        width: 250% !important;
+        height: auto !important;
+        margin: 0 30% !important;
+    }
+
+    .box-resumo-acesso {
+        /* width: 250% !important; */
+        padding: 0 !important;
+       
+    }
+    
+    .box-acesso {
+        flex-direction: column !important;
+        padding: 14px !important;
+    }
+    
+    .cubos-informacao {
+        margin: 0 18% !important;
+        display: block !important;
+        justify-content: center !important;
+    }
+    .cubos-informacao .views-view-grid .views-row {
+        display: block !important;
+        padding: 0 !important;
+        width: auto !important;
+    }
+    .views-field .views-field-field-conteudo-da-sede{
+        margin-left: -95px !important;
+    }
+    
+    .video-principal {
+        width: 250% !important;
+        height: auto !important;
+        margin: 0 25%;
+    }
+
+    .noticia-principal-gride img{
+        width: 250% ;
+        height: auto !important;
+        float: none !important;
+        display: flex !important;
+        margin: 5px 0 !important;
+        padding: 0 35px 0 0 !important;
+    }
+
+    .noticia-2col-wrap .view-content .views-view-grid .views-row .noticia-principal-gride .views-field-title .field-content {
+        /* padding: 0 15px 0 15px; */
+        margin: 5px 0 !important;
+        width: 76% !important;
+        text-align: justify !important;
+    }
+
+    .noticia-principal-gride .views-col .col-1{
+        width: 37% !important;
+    }
+    .noticia-2col-wrap{
+        display: block !important; 
+        margin: auto !important;
+        width: auto !important;
+        height: auto !important;
+    }
+    .site-logo img{
+        width: 240% !important;
+        height: auto !important;
+        margin-left: 2px;
+        margin-top: 69px;
+    }
+
+    .social-midia-sup ul{
+        padding-top: 6px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    /* Endereço do Rodapé */
+
+    .views-field-field-titulo-do-endereco{
+        /* width: 280%; */
+    }
+    
+    .views-field-field-conteudo-do-endereco{
+        /* width: 280%; */
+    }
+
+    .infosup{
+        margin: 5px 0;
+        font-size: 13px;
+        
+    }
+
+    .logo-proderj{
+        margin-bottom: 0px !important;
+    }
+
+    .lista-noticias-line {
+        margin: 0 19% !important;
+        width: 74%;
+        height: auto;
+    }
+    
+    .align-center{
+        display: unset;
+        width: 100%;
+        height: auto!important;
+    }
+    
+    .views-row {
+        display: block;
+        /* justify-content: space-between; */
+        
+        padding: 25px 0px 0px 0px;
+    }
+    
+    .lista-noticias {
+        margin: 3px 20% 0px auto!important;
+        background: #44773a !important;
+    }
+
+    .pesquisa{
+        width: 79%;
+    }
+    .cabecalho-azul-direita-redesSociais {
+        justify-content: center;
+    }
+    .index-noticias h2{
+        font-size: 18px;
+    }
+    .index-noticias1{
+        display: block;
+        padding-top: 30px;
+    }
+    .index-noticias1-noticia{
+        width: 100%;
+    }
+    .index-noticias h3{
+        padding-top: 20px;
+    }
+    .cabecalho-azul-completo{
+        display: block;
+    }
+    .cabecalho-azul-completo-esquerda{
+        margin: 10px 0px;
+    }
+    #logo-ceasa{
+        height: 57px;
+        padding: 0px 10px 0px 10px;
+    }
+    #logo-governo{
+        margin-bottom: 4px;
+        height: 36px;
+    }
+    .dots{
+        left: 79%;
+    }
+    .cabecalho-cinza{
+        height: 128px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .cabecalho-cinza-completo{
+        display: block;
+    }
+    .linkGoverno-redesSociais{
+        display: block;
+        padding-top: 0px;
+    }
+    #linkGoverno{
+        padding: 0px 0px 0px 0px;
+    }
+    .index-redesSociais{
+        padding-top: 5px;
+    }
+    .links{
+        display: block;
+        padding-top: 5px;
+    }
+    .rodape{
+        height: 95px;
+    }
+    .rodape-completo{
+        width: 100%;
+    }
+    #rodape-logo-proderj{
+        height: 38px;
+        padding-right: 10px;
+        margin-top: 0px;
+    }
+    #rodape-logo-governo{
+        height: 48px;
+        padding: 0px 0px 0px 10px;
+    }
+    #close{
+        position: relative;
+
+    }
+    .menu-row{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 30px 0px 50px 0px;
+        display: block !important;
+    }
+    .menu-column{
+        margin: 0 auto 25px auto;
+        display: block;
+        /* margin-bottom: 15px; */
+        width: 85%;
+        padding-left: 0px;
+    }
+
+    .menu-column li {
+        white-space: normal !important;
+        margin-bottom: 10px;
+    }
+
+
+    .index-noticias2{
+        display: block;
+    }
+    .index-noticias2-noticia {
+        width: 100%;
+    }
+    .index-noticias p {
+        margin-bottom: 20px;
+    }
+    .transparencia-completa{
+        display: block;
+    }
+    .transparencia-esquerda{
+        width: 100%;
+    }
+    .transparencia-direita{
+        width: 100%;
+    }
+    .transparencia-direita-quadrado {
+        height: 130px;
+        width: 130px;
+        margin-top: 10px;
+    }
+
+    /* Boletos */
+
+    .boletos-corpo{
+        text-align: center;
+    }
+    #flex{
+        display: block;
+    }
+    #flex-filha{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .input-botao{
+        width: 100%;
+    }
+    .coluna_01{
+        display: block;
+    }
+    .boletos-formulario{
+        display: block;
+    }
+    .dataTables_filter label{
+        display: none;
+    }
+    .tabela {
+        display: block;
+        position: relative;
+        width: 315px;
+        margin: 50px auto;
+    }
+    .tabela thead, .tabela tbody, .tabela th, .tabela td, .tabela tr {
+        display: block;
+    }
+    .tabela td, .tabela th {
+        height: 35px;
+        width: 120px;
+    }
+    #boletos-empresa{
+        width: 82%;
+    }
+    #boletos-campos{
+        width: 82%;
+    }
+    #boletos-tipo{
+        width: 82%;
+    }
+    .tabela thead {
+        float: left;
+    }
+    .tabela tbody {
+        width: 183px;
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+    .tabela tbody tr {
+        display: inline-block;
+        width: 121px;
+    }
+
+    /* acoesProgramas */
+
+    .acoesProgramas-input-btn{
+        display: block;
+    }
+    #acoesProgramas-input {
+        width: 100%;
+    }
+    .acoesProgramas-btn{
+        margin: 10px 0px 0px 0px;
+    }
+    /* Noticias */
+
+    .noticias-cards-completo {
+        display: block;
+        height: auto;
+    }
+    .noticias-cards-img {
+        width: 100%;
+    }
+    .noticias-cards-textos {
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    /* perfil presidente */
+
+    .presidente-img-texto-completo{
+        display: block;
+    }
+    .presidente-img{
+        width: 100%;
+        height: auto;
+    }
+    .presidente-textos{
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    /*serviço informacao*/
+    .servicoInformacaoCidadao-cards{
+        display: block;
+    }
+    .servicoInformacaoCidadao-card{
+        width: 100%;
+    }
+
+
+
+}
+
+.field-content {
+    margin-bottom: 10px;
+}
+
+.menu-row {
+    display: flex;
+}
+
+.flex-control-nav {
+    display: none;
+}
+
+#back2Top {
+    /* display: none!important; */
+}
+
+
+
+.image-style-imagem-noticias-481x350 {
+    width: 100%;
+    height: auto;
+}
+
+.presidente-textos{
+    margin-left: 0px;
+    width: 76%!important;
+    margin-top: 10px;
+}

@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contato_form.field_contato_protocolo
+    - field.field.node.contato_form.field_contato_sugestao
+    - field.field.node.contato_form.field_contato_email
+    - field.field.node.contato_form.field_contato_nome
+    - field.field.node.contato_form.field_contato_telefone
+    - field.field.node.contato_form.field_contato_mensagem
+    - node.type.contato_form
+  module:
+    - user
+id: node.contato_form.teaser
+targetEntityType: node
+bundle: contato_form
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_contato_protocolo: true
+  field_contato_sugestao: true
+  field_contato_email: true
+  field_contato_nome: true
+  field_contato_telefone: true
+  field_contato_mensagem: true

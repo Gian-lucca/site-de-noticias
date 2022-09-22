@@ -1,0 +1,26 @@
+#/*
+#|--------------------------------------------------------------------------
+#| contato.routing.yml
+#|--------------------------------------------------------------------------
+#| Arquivo onde informamos a rota em nosso site Drupal /contato
+#| author Davi Bernardo <davi.santos@extreme.digital>
+#| version 1.1
+#| copyright Proderj 2021.
+#*/
+contato_form:
+  path: '/contato'
+  defaults:
+    _form: '\Drupal\contato\Form\ContatoForm'
+    _title: 'Formulário de Contato'
+  requirements:
+    _permission: 'access content'
+
+contato.admin_settings_form:  
+  path: '/admin/config/contato/adminsettings'
+  defaults:  
+    _form: '\Drupal\contato\Form\ContatoAdminForm'  
+    _title: 'Formulário de Contato'  
+  requirements:  
+    _permission: 'access administration pages'  
+  options:  
+    _admin_route: TRUE

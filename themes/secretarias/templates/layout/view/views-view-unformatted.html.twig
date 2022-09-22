@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{% for row in rows %}     
+  <div class="cardBox">
+    <div class="card">
+      <div class="flip-container__flipper">
+        <div class="flip-container__front">
+            <button type="button" id="planejamento-orcamento-icon-card" class="flip-container__button">
+               <img src="{{ file_url(row.content['#row']._entity.fields.field_icone_flip.entity.uri.value) }}" width="100" height="100"><br><span>{{row.content['#row']._entity.fields.field_titulo_flip.value}}</span>
+            </button>
+        </div>
+        <div class="block-flash-card flip-container__back">
+            <ul>
+              {% for field_link in row.content['#row']._entity.fields.field_link_flip.getValue() %}  
+                <li><a href="{{ field_link.uri }}" target="_blank" title="{{ field_link.title }}">{{ field_link.title }}</a></li>
+              {% endfor %}
+            </ul>
+        </div>       
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+

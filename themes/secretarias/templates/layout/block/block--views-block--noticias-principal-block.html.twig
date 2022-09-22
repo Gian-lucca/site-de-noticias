@@ -1,0 +1,25 @@
+{% if label %}
+<section data-aos="zoom-in-up" class="programas-acoes branco aos-init aos-animate">
+  <div class="section-container">    
+    <div class="titulo-secao">
+      <span>{{ label }}</span>
+    </div>
+  </div>
+</section>
+<section id="noticias">
+  <div class="noticia-2col-wrap">
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+</section>
+<section id="noticias">
+    <div class="lista-noticias-line">
+        <button class="lista-noticias">
+            <a id="A4" href="./noticias">Veja a lista completa de notícias</a>
+        </button>
+    </div>
+</section>
+<hr class="gradiente">
+{% endif %}
+

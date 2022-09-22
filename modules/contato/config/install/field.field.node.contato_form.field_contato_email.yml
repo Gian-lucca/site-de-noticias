@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contato_email
+    - node.type.contato_form
+id: node.contato_form.field_contato_email
+field_name: field_contato_email
+entity_type: node
+bundle: contato_form
+label: Email
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

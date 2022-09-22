@@ -1,0 +1,422 @@
+/* CORES DE FUNDO DAS SEÇÕES */
+/*.cinza{background-color:#dddddd}*/
+.branco{background-color:#ffffff}
+video {
+  width: 100%!important;
+  height: auto!important;
+}
+
+.buttons-slider-position{top: 460px;}
+
+.swiper-container {width: 100%; margin-left: auto; margin-right: auto;}
+.swiper-slide {text-align: center; font-size: 18px; background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/*.swiper-slide img {
+  width: inherit;
+  display: block;
+   margin: auto; 
+   height: inherit; 
+  top: 0;
+  position: absolute;
+}*/
+
+.swiper-slide img {width: 100%; position: absolute; object-fit: cover; top: 44%; left: 50%; 
+  transform: translate(-50%, -45%); min-height: 100%;}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 20px; height: 20px; border-radius: 50px; margin: 0 4px;}
+span.swiper-pagination-bullet {display: inline-block; border-radius: 100%; background: transparent;
+  opacity: 0.5; border:2px solid #bbb;}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {opacity: 1; background: #bbb;}
+
+/* SEÇÕES */
+/* section#secao-pesquisa {
+  background-image: linear-gradient(rgba(0, 80, 138, 0.25) 50%, rgba(0, 80, 138, 0.25) 50%), url(../imagens/rio-de-janeiro-cristo-redentor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-height: 500px;
+  } */
+.section-container {padding: 25px 0px;}
+/* .section-container#cabecalho {padding: 1em; width:50%;} */
+.section-container#navega{display: flex; justify-content: space-around; flex-direction: column; align-items: center; padding: 0px;}
+.section-container#pesquisa{display: flex; align-items: center; justify-content: center; flex-direction: column; width: auto; padding: 0; margin: 0;}
+.section-container#vamos-virar-o-jogo {padding: 40px 0;}
+.section-container#segundo-slide {height: 400px; overflow: hidden;}
+.titulo-secao {display: block; margin-bottom: 25px;}
+.titulo-secao span{font-weight: bold; font-size: 2em; color: #00508a;}
+/* p:empty {width: 80px; height: 6px; background: #00508a; margin: 0 auto;} */
+
+.homemenu{display:none; padding: 15px; width:100%;}
+
+/* MAIS PESQUISADOS */
+.mais-pesquisados {margin-top: 30px; color: #ffffff; font-weight: 700; font-size: 0.9em; text-shadow: 1px 2px #363636; letter-spacing: 0.5;}
+.mais-pesquisados-wrap {border-radius: 25px; background-color: rgba(0, 80, 138, 0.55); margin-top: 10px; padding: 15px;}
+.mais-pesquisados-wrap a{margin: 4px; border-radius: 25px; background-color: #dddddd; color: #363636!important; font-weight: 700; font-size: 0.8em; padding: 5px 10px; cursor: pointer;}
+.primeira-linha {display:flex; justify-content: space-between;}
+.segunda-linha {font-size:0.8em; display:flex; flex-direction: row; justify-content: space-between;}
+
+/* TELEFONES �TEIS */
+.telefones-uteis-wrap {display: flex; flex-wrap: wrap; justify-content: center; width: 35em; margin: 0 auto;}
+.telefones-uteis-wrap a {margin: 7px 3px; border-radius: 25px; /* background-color: #dddddd; */ color: #363636; 
+  font-weight: 700; font-size: 0.9em; padding: 5px 12px; cursor: pointer;}
+.telefones-uteis-wrap button {margin: 7px 7px; border-radius: 25px; background-color: #dddddd; color: #363636; 
+  font-weight: 700; font-size: 0.9em; padding: 5px 12px; cursor: pointer; border: none;}
+.section-container #telefones-uteis{display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.telefones-uteis-linha{display: flex; flex-direction: row; justify-content: space-between;}
+
+/* HEADER */
+.cabecalho{height: 80px; display: flex; justify-content: space-around; align-content: center;
+  align-items: center; background:#44773a;}
+.cabecalho h1{margin-top:15px; font-size:1.5em;}
+.cabecalho-wrap {display: flex; place-items: center;}
+#logo-topo {margin-left: 25%;}
+#hambtn a{font-size: 2.5em; cursor: pointer; color:#ffffff;}
+
+.logo-branco-cabecalho{width:270px; height: 69px; background: url('../imagens/logo-governo-g13.png') no-repeat center center; 
+  background-size:cover; position: relative; left: -150;}
+.logo-branco-rodape{width:241px; height: 67px; background: url('../imagens/logo-governo-g13.png') no-repeat center center; 
+  background-size:cover; position: relative; top: -17px; left: -19px;}
+.logo-branco-secretarias{width:auto; height: 75px; background: url('../imagens/logo-governo-w.png') no-repeat center center; 
+  background-size:60%;}
+  .logo-proderj-fixo{width: 134px !important;; height: 300px; background: url('../imagens/logo-proderj.png') no-repeat;}
+
+.search-box {/* margin: auto; width: 100%; padding-left: 20%; */ height: 50px; /* overflow: hidden; vertical-align: middle; */ 
+  display: flex; margin-right: 10px;}
+.search-box input#CrtTopo_txtBuscar{width: 22.5em; height: 30px; border: none; font-size: 10pt; float: left; padding-left: 15px;
+  -webkit-border-radius: 10px 0px 0px 10px;
+  -moz-border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 0px 0px 10px;
+  margin-top:10px;
+}
+.search-box input#CrtTopo_txtBuscar::-webkit-input-placeholder {color: #65737e;}
+.search-box input#CrtTopo_txtBuscar:-moz-placeholder {color: #65737e; /* Firefox 18- */}
+.search-box input#CrtTopo_txtBuscar::-moz-placeholder {color: #65737e;  /* Firefox 19+ */}
+.search-box input#CrtTopo_txtBuscar:-ms-input-placeholder {color: #65737e;}
+.search-box > button.icon{
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  border: none;
+  background: #cccccc;
+  height: 30px;
+  width: 50px;
+  color: #00508a;
+  font-size: 1.6em;
+  cursor: pointer;
+  margin-top:10px;
+
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
+
+.search-box-articles{z-index: 100 !important; width: 290px; background: rgba(255, 255, 255, .7);
+  position: absolute; padding:1em; margin-top:40px; margin-left:10px; display: none;}
+
+/* .list-search-box{background:green;} */
+.list-search-box li{list-style:none; padding:5px; margin-bottom:10px;
+  border-bottom:1px solid rgba(255, 255, 255, .3)}
+.list-search-box li a{text-decoration: none; color:#00508a; font-weight: bold;
+  display: block; line-height: 30px;}
+.list-search-box span{font-style: italic; font-size:.8em; margin-left:4px; color:#ffffff;}
+
+/* SLIDE HEADER */
+/*.slider-fixo{height: 500px;  margin-top:-55px; }*/
+.title-slider{width: 100%; background:rgba(0, 0, 0, .55); position: absolute; color: #ffffff; 
+  font-size:.6em; text-align: left; padding: 1em 0px; bottom: 0px;}
+.desc-title-slider{margin-left: 12%;/* margin-top: 1.3em; */}
+.desc-title-slider h1 a{color:#ffffff; text-decoration: none;}
+
+
+/* MENU */
+.menu{background: #f3f3f3; /*display: flex; flex-direction: column;*/}
+
+/* MENU SUPERIOR */
+.menu-superior{background: #363636; /*padding-bottom: 3px;*/ height: 45px;}
+.menu-superior li{list-style: none;}
+.menusupi{width:75%; margin:0 auto; display: flex; justify-content: space-between; padding-bottom: 3px; 
+  position: relative; z-index: 1; align-items: center;}
+.menu-superior a{text-decoration: none; color:#fff; /*margin-left:30px;*/ font-size: .8em; font-weight: 400;}
+.esquerda-menu-superior {display: flex; width: 14.08em;}
+.infosup li{display: inline-block; vertical-align: middle; margin-left: 1.5em;}
+.social-midia-sup {padding-left: 20px;}
+
+/* MENUSUP-OVERLAY */
+.menusup-overlay{background: #363636; /*padding-bottom: 3px;*/ height: 45px;}
+.menusup-overlay li{list-style: none;}
+.menusupi-overlay{width:75%; margin:0 auto; display: flex; justify-content: space-between; padding-bottom: 3px; 
+  position: relative; z-index: 1; align-items: center;}
+.menusup-overlay a{text-decoration: none; color:#fff; /*margin-left:30px;*/ font-size: .8em;}
+.infosup-overlay li{display: inline-block; vertical-align: middle; margin-left: 1.5em;}
+
+/* MENU-OVERLAY */
+.menu-overlay-container {padding:0;}
+.menu-overlay {width: 100%; position: absolute; top: 45px; left: 0; background-color: #ececec; display: none; 
+  overflow-y: hidden; z-index: 100;
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+  }
+.menu-overlay a {text-decoration: none; transition: 0.3s;}
+.menu-overlay a:hover, .menu-overlay a:focus {opacity: .6;}
+.menu-overlay .closebtn {font-size: 4em; color: #00508a;}
+.menu-overlay-content {margin: 50px 0px;}
+.menu-overlay-content a{text-decoration: none; color:#717171; font-size: 1em;}
+.menu-row {display: flex; justify-content: space-between;}
+#close { position: relative; /*top: -30px;*/ margin-left: 60px; /*margin-right: 60px;*/}
+
+/* SUB MENU MOBILE DESKTOP */
+.sub-menu-mobile-desktop {width: 75%; margin:0 auto; display: flex; position: relative; z-index: 100;}
+.sub-menu-mobile-desktop ul{display: flex; align-items: center; margin-left:50px;}
+.sub-menu-mobile-desktop ul li{list-style: none; margin-right:30px;}
+.sub-menu-mobile-desktop ul li a{text-decoration: none; color:#cccccc;}
+
+/*
+.noticias-wrap {display:flex; flex-direction:row; justify-content: space-between; margin: 35px 0 50px 0;}
+.noticia {width:30%; margin-right: 10px;}
+.noticia h4 {color: #00508a; font-size: 0.8em; line-height: 2.3;}
+.noticia h1 {color: #363636; line-height: 1.2;}*/
+
+/* NOTICIAS ABAIXO DO SLIDER 1 */
+.noticia-3col-wrap {display: flex; justify-content: space-between; margin: 0px auto; width: 76%; padding: 25px 0px 0px 0px;}
+.noticia-2col-wrap {display: flex; justify-content: space-between; margin: 0px auto; width: 76%; padding: 25px 0px 25px 0px;  flex-wrap: wrap;}
+.noticia-3col {width:30%; margin-right: 10px;}
+.noticia-2col {width:47%; margin-right: 10px;}
+.noticia-2col h4{color: #00508a; font-size: 0.8em; line-height: 2.3; margin-top: 20px; font-weight: 700;}
+.noticia-2col h1{color: #363636; line-height: 1.2; font-weight: 700;}
+/* .noticia-3col h4{color: #00508a; font-size: 0.8em; line-height: 2.3; font-weight: 700;} */
+.noticia-2col h4 {
+  color: #00508a;
+  font-size: 0.8em;
+  line-height: 2;
+  margin-top: 5px;
+  font-weight: 700;
+}
+.noticia-3col h1{color: #363636; line-height: 1.2; font-weight: 700;}
+.noticia-3col p{margin-top: 10px;}
+.noticia-2col p{margin-top: 10px;}
+.noticia-3col, .noticia-2col, a{text-decoration: none;}
+.noticias-3col-wrap {display: flex; justify-content: space-between; margin: 0px auto; width: 76%; padding: 25px 0px 25px 0px;}
+.noticias-2col-wrap {display: flex; justify-content: space-between; margin: 0px auto; width: 76%; padding: 25px 0px 0px 0px;}
+
+.lista-noticias-line {padding-bottom: 20px;}
+
+hr.gradiente {border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
+
+/* VOLTA AO TOPO  */
+
+#back2Top {width: 40px; line-height: 40px; overflow: hidden; z-index: 999; display: none; cursor: pointer; position: fixed; 
+  bottom: 50px; right: 0; background-color: #ccc; color: #555; text-align: center; font-size: 30px; text-decoration: none; 
+  border-radius: 15px 15px 0 0;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+#back2Top:hover {background-color: #DDF; color: #000;}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width: 1300px) {
+  .logo-branco-cabecalho {left: 0;}
+ /*  .menusupi {width: 85%;} */
+}
+
+@media screen and (max-width: 1045px) {
+  .menusupi {width: 95%;}
+}
+
+@media screen and (max-width: 1024px) {
+  .section-container {width: 95%;}
+  .search-box input#CrtTopo_txtBuscar {width: 15em;}
+  .noticia-2col-imagem-wrap {height: 200px;}
+  .section-container#slide2 {height: 400px;}
+  .search-box input#CrtTopo_txtBuscar {width: 15em;}
+  .slide2-layout {padding: 0; height: 300px;}
+  #Section2 {height: 400px;}
+  .slide2-layout .arrow2 {height: 200px;}
+  .slide2-wrap {height: auto;}
+  .desc-title-slider {margin: 2%;} 
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {right: 2%;}
+  }
+
+
+/* @media screen and (max-width: 750px) and (min-width: 621px){
+  .desc-title-slider {margin-left: 2%;}
+  .title-slider {font-size: .51em;}
+  .buttons-slider-position {top: 470px;}
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {right: 2%;}
+  .swiper-slide img {position: absolute; top: 0;}
+  } */
+
+
+/* @media screen and (max-width: 1024px) and (min-width: 676px){
+  .section-container#cabecalho {width: 95%;}
+  } */
+
+
+@media screen and (max-width: 820px){
+
+.title-slider {
+    font-size: .45em;
+    bottom: 1%;}
+
+.swiper-slide {
+    height: 15rem;}
+
+/*#hambtn a {
+     font-size: 2em; 
+    position: absolute;
+     top: 25; 
+    left: 80px;}*/
+}
+
+
+/* @media screen and (max-width: 675px) and (min-width: 621px){
+  .section-container#cabecalho {flex-direction: column;}
+  .cabecalho {height: unset;}
+  .section-container#cabecalho a {margin: 10px 0;}
+  .swiper-wrapper {margin-top: -2em;}
+  } */
+
+
+@media screen and (max-width: 620px){
+
+  /* MENU SUPERIOR */
+  .menu-superior, .menusup-overlay {height: auto; /* text-align: center; */}
+  .menu-superior a {font-size: 1.1em;}
+  .menusup-overlay a {font-size: 1.1em;}
+  .menusupi, .menusupi-overlay {width: 100%; display: flex;  flex-direction: column; margin: 0;}
+  .esquerda-menu-superior {margin: 10px 0; width: 100%; padding-left: 5%; padding-right: 20px;}
+  .infosup {margin: 5px 0;}
+  .infosup ul {display: flex; flex-wrap: wrap; justify-content: center;}
+  .infosup li:first-child{margin-left: 0px;}
+  .acessibilidade-dropbtn {font-size: 1.1em;}
+  .acessibilidade-dropdown-content {right: -10;}
+  .social-midia-sup ul{padding-top: 6px;}
+/*   #hambtn {position: absolute; left: 25; top: 155;} */
+
+
+  /* MENU OVERLAY */
+  .menu-overlay-content {margin: 25px 0px;}
+  .menu-row {display: block; font-size: x-large;}
+  .menu-column {padding-left: 20px; margin-bottom: 20px;}
+  .menu-column h4 {margin-bottom: 2px;}
+  #close {position: absolute; top: 70px; width: 50px; right: 25; margin: 0;}
+  .menu-overlay {top: 1%;}
+
+  /* CABECALHO */
+  .cabecalho {height: fit-content;}
+  /* .section-container#cabecalho {width: 100%; justify-content: space-evenly; flex-direction: column; padding: 5px;} */
+   #logo-topo {margin-left: 5%;}
+  .logo-branco {margin-bottom: 15;}
+  .logo-branco-cabecalho {left: 0; margin: 5px 0px;}
+  .search-box input#CrtTopo_txtBuscar {width: 12em;}
+  .search-box > button.icon {width: 40px;}
+  .search-box {margin-right: 0px;}
+  
+  /* SLIDE 1 */
+/*   .swiper-slide img{width: 100%; position: absolute; bottom: 0;} */
+  .swiper-container-horizontal > .swiper-pagination-bullets {right: 20; bottom: 10px;}
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {width: 15px; height: 15px; margin: 3px 3px;}
+/*   .desc-title-slider {margin-left: 2%;} */
+  .buttons-slider-position {top: unset;}
+  
+  /* .slider-fixo {height: 25em;} 
+  .swiper-container {height: inherit;} 
+  .swiper-container-android .swiper-slide, .swiper-wrapper {height: inherit;}
+  .swiper-slide {width: 100%; height: inherit; margin-right: 30px;} */
+
+
+
+  /* NOTICIAS */
+  .noticia-3col-wrap {display: block;}
+  .noticia-2col-wrap {display: block;}
+
+  /* VAMOS VIRAR O JOGO */
+  .programas-acoes article, .noticia-2col, .noticia-3col {width: 100%; margin-bottom: 20px;}
+  .programas-acoes article {width: 100%;}
+
+  /* SLIDE 2 */
+  .section-container#slide2 {height: auto;}
+  .slide2-layout .dots2 {bottom: 30;}
+  .slide2-layout .dots2 li {width: 30px; height: 30px;}
+  .slide2-layout .arrow2 {display: none;}
+  
+  /* TELEFONES UTEIS */
+  .telefones-uteis-wrap{font-size: 1.3em; width: auto;}
+  .telefones-uteis-wrap button {margin: 7px 7px 15px 7px; padding: 10px 15px;}
+  .telefones-uteis-linha{display: contents;}
+  .md-modal-telefones, .md-effect-telefones, .md-show-telefones { width: 80%;}
+  .md-show-telefones.md-effect-telefones .md-content-telefones {height: auto; padding: 0 1em 1em 1em;}
+  .fecha-modal {left: 100%; line-height: .85;}
+
+  
+  
+/*   .swiper-slide img {width: 120%;} */
+
+  .titulo-secao span {font-size: 1.6em;}
+  .desc-slider2-conteudo {text-align: center;}
+  .desc-slider2-conteudo h1 {font-size: 9em;}
+  .desc-slider2-texto {font-size: 1.8em; margin: 0 30px;}
+  #Section2 {height: 350px;}
+  .section-container#segundo-slide {height: 350px;}
+  .slide2, .slide2-layout {height: 265px;}
+
+/*   .menu-overlay {
+    top: 174px;} */
+
+  #close {top: -20px;}
+  .list-search-box li {padding: 0px; margin-bottom: 0px;}
+/*   .section-container#cabecalho a {margin: 0;} */
+  .list-search-box li a {line-height: 30px;}
+  .search-box-articles {width: 190px;padding: .5em 1em;}
+
+  }    /*  FIM @media screen and (max-width: 620px)  */
+
+
+  
+  /*  @media screen and (max-width: 500px){
+    .swiper-slide{margin-right: 10%;}
+    }   */
+
+  @media screen and (max-width: 415px) {
+  #atl-player {position: unset; right: 0;}
+  .esquerda-menu-superior {justify-content: space-evenly;}     
+  }
+
+  @media screen and (max-width: 360px) {
+    .noticia-3col-wrap {display: block; margin: 0 25px;}
+    .noticia-2col-wrap {display: block;}
+    .search-box input#CrtTopo_txtBuscar{width: 15em;}
+ /*    #hambtn {position: relative; left: -108; top: 0;} */
+    .menu-overlay {top: 2.8%;}
+  }

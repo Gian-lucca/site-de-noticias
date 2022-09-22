@@ -1,0 +1,15 @@
+#/*
+#|--------------------------------------------------------------------------
+#| contribuicao.links.menu.yml
+#|--------------------------------------------------------------------------
+#| Arquivo onde podemos criar um menu automárico para o site Drupal
+#| author Davi Bernardo <davi.santos@extreme.digital>
+#| version 1.1
+#| copyright Proderj 2021.
+#*/
+contribuicao.admin_settings_form:  
+  title: 'Configuração do Formulário de contribuição'  
+  route_name: contribuicao.admin_settings_form  
+  description: 'Configuração do Formulário de contribuição'
+  parent: system.admin_config_system  
+  weight: 99

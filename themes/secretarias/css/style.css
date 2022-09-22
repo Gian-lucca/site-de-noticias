@@ -1,0 +1,1505 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  background: #ffffff;
+}
+
+.articles-noticias img {
+  width: 100%;
+}
+.articles-noticias a {
+  width: 100%;
+}
+.icone img {
+  width: 5%;
+}
+
+
+.contrast::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../imagens/contrast-black.svg") no-repeat center center;
+  background-size: cover;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
+}
+.accessibility::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../imagens/accessibility.svg") no-repeat center center;
+  background-size: cover;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.form-pesquisa .buscarportal {
+  /*height: 35px; width: 550px;*/
+  padding: 0.7em; /* transform: skewX(-15deg); border: 2px solid #717171; */
+  color: #717171;
+  font-size: 0.8em;
+  outline: none;
+  border: none;
+  border-radius: 8px 0px 0px 8px; /*margin-right: 20px; */
+}
+.buscarportal::placeholder {
+  color: #cccccc;
+  outline: none;
+  font-style: italic;
+} /* Firefox, Chrome, Opera */
+.buscarportal:-ms-input-placeholder {
+  color: #cccccc;
+  outline: none;
+  font-style: italic;
+} /* Internet Explorer 10-11 */
+.buscarportal::-ms-input-placeholder {
+  color: #cccccc;
+  outline: none;
+  font-style: italic;
+} /* Microsoft Edge */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+/* ITENS CUSTOMIZADOS */
+.noticia a {
+  text-decoration: none;
+}
+.cinza {
+  background-color: #dddddd;
+}
+
+/* REDES SOCIAIS */
+.redes li,
+.redes-ft li {
+  list-style: none;
+  display: inline-block;
+  border-right: 1px solid #e2e2e2;
+  width: 25px;
+}
+.social-midia-sup li {
+  list-style: none;
+  display: inline-block;
+  width: 25px;
+}
+.social-midia-inf li {
+  list-style: none;
+  display: inline-block;
+  width: 25px;
+  margin-right: 20px;
+}
+.redes li:nth-child(5n),
+.redes-ft li:nth-child(5n) {
+  border-right: 1px solid transparent;
+}
+.redes-ft {
+  margin-top: 50px;
+}
+.icons {
+  width: 17px;
+  height: 17px;
+  text-indent: -9999px;
+  display: block;
+}
+.arrow-right {
+  background: url("../imagens/arrow-right.png") no-repeat center center;
+  background-size: cover;
+}
+.arrow-left {
+  background: url("../imagens/arrow-left.png") no-repeat center center;
+  background-size: cover;
+}
+.instagram {
+  background: url("../imagens/icon-rs_instagram-br.png") no-repeat center center;
+  background-size: cover;
+}
+.facebook {
+  background: url("../imagens/icon-rs_facebook-br.png") no-repeat center center;
+  background-size: cover;
+}
+.twitter {
+  background: url("../imagens/icon-rs_twitter-br") no-repeat center center;
+  background-size: cover;
+}
+.youtube {
+  background: url("../imagens/youtube.svg") no-repeat center center;
+  background-size: cover;
+}
+.webmail-menu {
+  background: url("../imagens/icon_webmail.png") no-repeat center center;
+  background-size: cover;
+}
+.soundcloud {
+  background: url("../imagens/flickr.svg") no-repeat center center;
+  background-size: cover;
+}
+.instagram-ft {
+  background: url("../imagens/sm_instagram-ft.svg") no-repeat center center;
+  background-size: cover;
+}
+.facebook-ft {
+  background: url("../imagens/sm_facebook-ft.svg") no-repeat center center;
+  background-size: cover;
+}
+.twitter-ft {
+  background: url("../imagens/sm_twitter-ft.svg") no-repeat center center;
+  background-size: cover;
+}
+.youtube-ft {
+  background: url("../imagens/sm_youtube-ft.svg") no-repeat center center;
+  background-size: cover;
+}
+.soundcloud-ft {
+  background: url("../imagens/sm_flickr-ft.svg") no-repeat center center;
+  background-size: cover;
+}
+.instagram-sup {
+  background: url("../imagens/sm_instagram-ft.svg") no-repeat center center;
+  background-size: cover;
+}
+.facebook-sup {
+  background: url("../imagens/sm_facebook-ft.svg") no-repeat center center;
+  background-size: cover;
+}
+.twitter-sup {
+  background: url("../imagens/sm_twitter-ft.svg") no-repeat center center;
+  background-size: cover;
+}
+.youtube-sup {
+  background: url("../imagens/sm_youtube-ft.svg") no-repeat center center;
+  background-size: cover;
+}
+.soundcloud-sup {
+  background: url("../imagens/sm_soundcloud-ft-2.svg") no-repeat center center;
+  background-size: cover;
+}
+
+.list-menu {
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0px 15px 10px #e2e2e2;
+}
+.list-menu li {
+  list-style: none;
+  padding: 1em;
+  background: linear-gradient(150deg, #00508a, #0074a5);
+  transform: skewX(-15deg);
+  margin-left: -7px;
+}
+.list-menu li:nth-last-child(1) {
+  width: 25%;
+  background: #00508a;
+  transform: none;
+}
+.list-menu li:nth-last-child(1) a {
+  transform: none;
+}
+.list-menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8em;
+  display: block;
+  transform: skew(15deg);
+}
+.list-menu li:hover {
+  background: #02385f;
+  cursor: pointer;
+}
+
+/* CONTAINER */
+.section-container {
+  width: 100%;
+  padding: 1em 0px;
+  margin: 0 auto;
+}
+.section-container#cabecalho {
+  width: 76%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/*LINK ESTRUTURA*/
+
+#flexslider-2.flexslider.optionset-thumbnail-slider {
+  display: inline-flex;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+}
+
+.section-container.estrutura {
+  width: 50% !important;
+}
+
+.estrutura .flex-viewport .slides li {
+  width: 210px;
+  height: 100px;
+  margin-right: 3px !important;
+  float: left;
+  background: #594f9f;
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.views-field.views-field-field-link-estrutura
+  .field-content.link-slider-links-uteis
+  a {
+    width: 210px;
+    position: absolute;
+    left: -210px;
+    top: -61px;
+    text-align: center;
+    padding: -60px 0;
+    padding: 34px 0px;
+}
+
+.link-slider-links-uteis a {
+  color: transparent !important;
+}
+
+.flexslider .views-field.views-field-title {
+  text-align: center;
+  color: #fff !important;
+  padding: 1px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+  left: 88px !important;
+  padding: 0 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  right: 88px !important;
+  padding: 0 10px;
+}
+
+/*PRIMEIRO SLIDER */
+img.image-style-slider-principal-1920x400 {
+  height: 450px !important;
+}
+
+/*SLIDER SECUNDÁRIO*/
+
+img.image-style-slider-secundario-1920x400 {
+  position: relative;
+  /* top: -132px; */
+}
+
+.titulo-secao span {
+  display: block;
+  z-index: 10;
+  /* position: relative;
+  top: -45px; */
+}
+
+/*SERVIÇOS*/
+
+.servicos .section-container {
+  width: 75%;
+}
+
+#flexslider-4 ul li {
+  width: 265px !important ;
+  height: auto;
+  margin-right: 15px !important
+  
+}
+/*img.image-style-slider-links-uteis-375x235 {
+  height: 100px !important;
+} */
+
+/*SERVIÇOS PAGE*/
+.field-content.link-page a {
+  padding: 0px 5px !important;
+  display: inline !important;
+  color: #462773!important ;
+}
+
+/* SeÃ§Ã£o de Noticias */
+.container-noticias {
+  margin-top: 30px;
+}
+.container-noticias span {
+  font-weight: bold;
+  font-size: 2em;
+  color: #00508a;
+  display: block;
+}
+.articles-noticias {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.noticia-item {
+  width: 30%;
+  margin-bottom: 50px;
+}
+.noticia-item img {
+  /*border-radius:10px;*/
+  height: 174px;
+}
+.noticia-item span {
+  font-size: 0.9em;
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+}
+.noticia-item h3 {
+  font-size: 1.2em;
+  color: #00508a;
+  font-weight: bold;
+}
+.noticia-item a {
+  text-decoration: none;
+  color: #00508a;
+}
+
+.noticia-2col-imagem-wrap {
+  height: 350px; /*width: 500px;*/
+  overflow: hidden;
+  position: relative;
+}
+.noticia-2col-imagem-wrap img {
+  height: inherit;
+  width: 130%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+/*página da notícia unica*/
+.field.field--name-field-imagem-noticias.field--type-image.field--label-hidden.field__item
+  img {
+  width: 100%;
+  height: auto;
+}
+
+.field.field--name-body.field--type-text-with-summary.field--label-hidden.field__item
+  > img {
+  /* width: 444px; */
+  height: auto;
+  max-width: 100%;
+}
+
+/* BTN LISTAGEM DE NOTÃCIAS */
+.lista-noticias {
+  padding: 0.5em 2em;
+  border: 0;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 0.5;
+  margin: 0 auto;
+  display: block;
+  background-color: #00508a;
+}
+.lista-noticias a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* SERVIÃ‡OS + PROCURADOS */
+.servicos {
+  display: flex;
+  margin-top: 100px;
+}
+.servicos h1 {
+  width: 350px;
+  display: block;
+  position: absolute;
+  margin: -60px 10px;
+  background: linear-gradient(150deg, #00508a, #0074a5);
+  padding: 0.4em;
+  color: #fff;
+}
+.servicos h1::after {
+  content: "";
+  position: relative;
+  border-top: 50px solid #fff;
+  border-left: 30px solid transparent;
+  right: -50px;
+  top: 40px;
+}
+.infos-servicos span {
+  width: 100%;
+  height: 50px;
+  background: #e2e2e2;
+  color: #00508a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.infos-servicos {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.desc-servicos a {
+  color: #fff;
+  text-decoration: none;
+}
+.filter_9 {
+  width: 50%;
+  height: 120px;
+  background: #00588a;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.filter_8 {
+  width: 50%;
+  height: 120px;
+  background: #00588a;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.filter_7 {
+  width: 50%;
+  height: 120px;
+  background: #00588a;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.filter_6 {
+  width: 50%;
+  height: 120px;
+  background: #00588a;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* MANUAIS */
+.manuais {
+  width: 100%;
+  min-height: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  background: #00508a;
+  justify-content: space-between;
+}
+
+.manuais::before {
+  content: "";
+  width: 100%;
+  min-height: 550px;
+  margin-top: -30px;
+  height: 50px;
+  z-index: -1;
+  background: #00508a;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.lista-manuais {
+  background: #e2e2e2;
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.lista-manuais img {
+  width: 70px;
+  margin: 70px 0px 20px 0px;
+}
+.lista-manuais span {
+  margin-top: 0px;
+  display: block;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/* VÃDEOS */
+.videos {
+  width: 70%;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: -200px;
+  display: block;
+}
+.videos-internos {
+  width: 85%;
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: -60px;
+}
+.videos span {
+  background: #e3e3e3;
+  color: #00508a;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 150px;
+  margin-bottom: 10px;
+  display: block;
+  padding: 0.3em;
+}
+.videos span::after {
+  content: "";
+  position: relative;
+  border-top: 47px solid #00508a;
+  border-left: 35px solid transparent;
+  right: -29px;
+  top: 39px;
+}
+/* BTN + VÃDEOS */
+.btn-views-videos {
+  background: linear-gradient(150deg, #00508a, #0074a5);
+  padding: 0.7em;
+  color: #ffffff;
+  font-weight: bold;
+  border: 0;
+  margin-top: 70px;
+  position: absolute;
+  right: 352px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.btn-imprensa {
+  right: 282px;
+}
+
+.btn-views-videos a {
+  color: #fff;
+  text-decoration: none;
+}
+.btn-views-videos::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #e2e2e2 url("../imagens/plus.svg") no-repeat center center;
+  background-size: 75%;
+  display: block;
+  position: absolute;
+  left: -34px;
+  top: 0;
+  padding: 0.54em;
+}
+
+/* DESTAQUES */
+.info-destaques {
+  width: 70%;
+  margin: 120px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.info-destaques article {
+  border: 1px solid #f3f3f3;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* PROGRAMAS E AÃ‡Ã•ES */
+.programas-acoes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.programas-acoes h1 {
+  width: 315px;
+  display: block;
+  position: absolute;
+  margin-top: -60px;
+  background: linear-gradient(150deg, #00508a, #0074a5);
+  padding: 0.4em;
+  color: #fff;
+}
+.programas-acoes h1::after {
+  content: "";
+  position: relative;
+  border-top: 50px solid #fff;
+  border-left: 30px solid transparent;
+  right: -50px;
+  top: 40px;
+}
+.programas-acoes article {
+  /*width:30%;*/
+  margin: 5px;
+  padding: 0.4em;
+  background: #e2e2e2;
+}
+
+/* PÃGINAS INTERNAS */
+
+/* IMPRENSA */
+.imprensa-titulo {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.imprensa-titulo h1 {
+  width: 203px;
+  display: block;
+  position: relative;
+  margin-top: -60px;
+  background: linear-gradient(150deg, #00508a, #0074a5);
+  padding: 0.4em;
+  color: #fff;
+  margin-top: 30px;
+}
+.imprensa-titulo h1::after {
+  content: "";
+  position: relative;
+  border-top: 50px solid #fff;
+  border-left: 30px solid transparent;
+  right: -50px;
+  top: 40px;
+}
+.breadcumbs {
+  margin-bottom: 50px;
+  display: block;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+.agenda-governador {
+  width: 30%;
+}
+.agenda-governador a {
+  padding: 1em;
+  text-transform: uppercase;
+  color: #00588a;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.agenda-governador img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.img-corte {
+  height: 82px !important;
+  width: 240px !important;
+}
+
+.imprensa-conteudo {
+  width: 100%;
+  position: relative;
+  margin-top: 250px;
+}
+.imprensa-conteudo-descritivos {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  margin-top: 50px;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 1em;
+}
+.imprensa-conteudo .impresa-desc-conteudo-titulo {
+  color: #00508a;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.imprensa-desc-conteudo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.imprensa-desc-conteudo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #00508a;
+}
+.imprensa-desc-conteudo p {
+  color: #717171;
+}
+.desc-data {
+  font-size: 0.7em;
+  margin-top: 10px;
+}
+/* .imprensa-conteudo-imagem{width:50%; margin-right:20px;} */
+.tags {
+  margin-bottom: 50px;
+}
+.tags ul {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.tags li {
+  padding: 0px 7px;
+  border-radius: 5px;
+  list-style: none;
+  background: #e2e2e2;
+  margin: 5px;
+}
+.tags li a {
+  text-decoration: none;
+  font-size: 0.9em;
+  color: #363636;
+}
+
+/* SOBRE O GOVERNO  */
+.governo-titulo,
+.outros-orgaos-titulo,
+.secretarias-titulo {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-content: center;
+  align-items: left;
+}
+.governo-titulo h1,
+.outros-orgaos-titulo h1,
+.governadores-nomes,
+.secretarias-titulo h1,
+.imprensa-titulo h1 {
+  width: 35%;
+  display: block;
+  position: relative;
+  margin-top: -60px;
+  background: linear-gradient(150deg, #00508a, #0074a5);
+  padding: 0.4em;
+  color: #fff;
+  margin-top: 30px;
+  padding-right: 30px;
+}
+
+.governo-titulo h1::after,
+.outros-orgaos-titulo h1::after,
+.secretarias-titulo h1::after,
+.servicos h1::after,
+.imprensa-titulo h1::after,
+.governadores-nomes::after {
+  content: "";
+  position: absolute;
+  border-top: 50px solid #fff;
+  border-left: 30px solid transparent;
+  right: 0px;
+  top: 0px;
+}
+
+.governadores-nomes {
+  width: 100%;
+}
+
+.governadores {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-fixo img {
+  height: 400px;
+}
+
+.governadores article {
+  width: 40%;
+}
+.governadores article span {
+  padding: 20px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: -30px;
+}
+.vice-gv {
+  text-align: right;
+}
+.governadores p {
+  text-align: justify;
+  color: #717171;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+
+.logo-proderj-fixo {
+  width: 135px !important;
+  background-image: url("../imagens/logo-proderj.png");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+
+.logo-proderj2 {
+  width: 241px !important;
+  height: 62px !important;
+  background: url("../imagens/logo-governo-g13") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  top: 0px !important;
+  left: 0px;
+}
+
+
+.footer {
+  width: 100%;
+  background: #00508a;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 0px;
+}
+
+.logo-rjrodape{
+  display: flex;
+  width: 27%;
+}
+
+.logo-rjrodape img {
+  width: 95%;
+}
+
+.endereco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.endereco .views-row{
+  width: 100%;
+  padding: 0px;
+}
+
+.footer h1 {
+  font-size: 1.5em;
+}
+.footer span {
+  font-weight: 300;
+  font-size: 0.8em;
+  text-align: center;
+}
+.logofooter {
+  width: 500px;
+  height: 100;
+  background: url("../imagens/logo-governo-w.png") no-repeat center center;
+  background-size: 70%;
+  margin: 30px 0px 15px 0px;
+}
+
+.views-field.views-field-field-titulo-do-sic {
+  margin-top: 30px;
+}
+/*  SECRETARIAS */
+.close-modal {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url("../imagens/menu-mobile-close.svg") no-repeat center center;
+  background-size: cover;
+  top: 10px;
+  right: 0px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+.secretarias-conteudo .art {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e2e2e2;
+  background: #fff;
+}
+.secretarias-conteudo img {
+  border-right: 1px solid #e2e2e2;
+  width: 250px;
+}
+
+/*.secretarias-img {width:100%;}*/
+.secretarias-conteudo article {
+  padding: 1em;
+}
+.secretarias-conteudo h1 {
+  text-transform: uppercase;
+  color: #00508a;
+  font-weight: 600;
+}
+.secretarias-conteudo span {
+  text-transform: uppercase;
+  color: #363636;
+  font-weight: 600;
+  margin: 10px 0px;
+  display: block;
+  cursor: pointer;
+}
+
+/*.secretarias-img {width: 100%;}*/
+.desc-secretarias-conteudo {
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.secretarias-atendimento {
+  /* width: 70%;*/
+  background: #e2e2e2;
+  padding: 1em;
+  font-weight: bold;
+  color: #00508a;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.btn-secretaria-atendimento {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-secretaria-atendimento a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em;
+  text-align: center;
+  background: linear-gradient(150deg, #00508a, #0074a5);
+  color: #fff;
+  margin-top: 10px;
+}
+
+.btn-secretaria-atendimento::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background: #e2e2e2 url("../imagens/plus.svg") no-repeat center center;
+  background-size: 75%;
+  display: block;
+  position: absolute;
+  margin-left: -110px;
+  margin-top: 10px;
+  padding: 0.54em;
+}
+
+/* OUTROS ORGÃƒOS */
+.otr-conteudo {
+  display: flex;
+  justify-content: space-around;
+}
+.otr-conteudo article {
+  width: 100%;
+  height: 150px;
+  background: #e2e2e2;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.otr-conteudo a {
+  text-decoration: none;
+}
+.icons-orgaos::before {
+  content: "";
+  width: 70px;
+  height: 90px;
+  background: red;
+  position: absolute;
+  z-index: -1;
+}
+
+.fundacoes::before {
+  background: url("imagens/fundacoes.png") no-repeat center center;
+  background-size: cover;
+}
+.empresas::before {
+  background: url("imagens/empresas.png") no-repeat center center;
+  background-size: cover;
+}
+.autarquias::before {
+  background: url("imagens/autarquias.png") no-repeat center center;
+  background-size: cover;
+}
+.instituto::before {
+  background: url("imagens/fundacoes.png") no-repeat center center;
+  background-size: cover;
+}
+
+.otr-conteudo article h1 {
+  color: #00508a;
+  font-weight: bold;
+}
+
+.otr-conteudo-desc span {
+  width: 10%;
+  color: #e2e2e2;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.otr-conteudo-desc h1 {
+  color: #00508a;
+  margin-top: 50px;
+}
+.otr-conteudo-desc article {
+  display: flex;
+  margin-top: 50px;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 30px;
+}
+
+.otr-conteudo-desc ul {
+  list-style: none;
+}
+.otr-conteudo-desc li a {
+  text-decoration: none;
+  color: #717171;
+}
+
+.modal {
+  width: 70%;
+  height: 500px;
+  position: fixed;
+  background: #fff;
+  top: 120px;
+  left: calc(100% - 85%);
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1em;
+  z-index: 9999;
+  overflow-y: auto;
+  display: flex;
+}
+
+.modal::-webkit-scrollbar {
+  width: 12px;
+}
+.modal::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  -ms-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  -o-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+.modal::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  -ms-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  -o-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+.box-modal {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #00508adc;
+  position: fixed;
+  z-index: 200;
+  display: none;
+}
+
+.profile-modal {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.desc-modal {
+  width: 50%;
+}
+.desc-modal .desc-secretario,
+.subtitulo-secretario {
+  color: #717171;
+}
+.desc-modal h1,
+.info-modal h3 {
+  color: #00508a;
+}
+.desc-modal span {
+  margin-bottom: 20px;
+  display: block;
+}
+.info-modal {
+  margin-top: 20px;
+}
+
+.desc-slider span {
+  text-transform: uppercase;
+}
+
+.videos-title h3 {
+  text-align: center;
+}
+
+.videos-title {
+  display: block;
+}
+
+.desc-videos span::after {
+  content: none;
+}
+
+.desc-videos span {
+  text-decoration: none;
+  color: #fdfdfd;
+  background: none;
+  font-size: 0.9em;
+  width: 100%;
+  padding: 0;
+}
+
+.desc-videos {
+  background: #00508ad7;
+}
+
+
+.logo-rjgov-img {
+  width: 100% !important;
+}
+
+/*Header*/
+
+.menuimg{
+  margin: 0 14px -4px 40px;
+}
+.logo-estado img{
+  width: 100%;
+  height: auto;
+}
+.header-imagem-home img {
+  width: 200px;
+  height: auto;
+}
+b, strong{
+  font-size: 18px;
+  font-weight: 900;
+}
+.logo-cabecalho-home {
+  width: 180px !important;
+  height: 127px !important;
+  background: url(../imagens/logo-desenvolve-rj.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  top: -6px !important;
+  left: 0px;
+}
+
+.header {
+  width: 100%;
+  height: 50px; 
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: #192844;
+  padding: 25px 0;
+}
+
+. {
+  flex: 1;
+  height: 125px;
+}
+.navbar{
+  display: none;
+}
+#menuArea{
+  display: none;
+}
+
+.header-nav {
+  width: 100%;
+  display: flex;
+  max-width: 1430px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav ul li {
+  display: inline;
+  position: relative;
+}
+
+.header-nav ul li a {
+  color: #05F2F2;
+  font-size: 1.125rem;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.header-nav ul li a:hover {
+  color: #ffffff;
+}
+
+.header-nav ul ul {
+  display: none;
+  position: absolute;
+  left: 28px;
+  text-align: left;
+  padding: 0px;
+  width: 170px;
+  z-index: 10px;
+
+}
+.popup2 {
+  left: 0px !important;
+}
+
+.header-nav ul li:hover ul {
+  display: block;
+  background-color: #ffffff;
+  z-index: 9999;
+}
+
+.header-nav ul ul li a {
+  display: block;
+}
+.header-nav ul li ul li{
+  background: rgb(255, 255, 255);
+}
+
+.header-nav ul li ul li:hover  {
+  display: block;
+  background-color: #0050af;
+
+}
+
+@media (min-width: 600px) {
+  [data-aos^="fade"][data-aos^="fade"].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@media (min-width: 1600px) {
+  #flexslider-4 ul li {
+    width: 350px !important;
+    height: auto;
+    margin-right: 25px !important;
+}
+
+}
+
+@media (min-width: 1400px) {
+
+  .logo-rjgov {
+    max-width: 100%;
+    position: relative;
+    right: 65px;
+  }
+  .servicos .section-container {
+    width: 52%;
+  }
+  .flexslider:hover .flex-direction-nav .flex-prev {
+    left: 200px !important;
+    padding: 0 10px;
+  }
+  .flexslider:hover .flex-direction-nav .flex-next {
+    right: 200px !important;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+    img.image-style-slider-secundario-1920x400 {
+    height: 450px!important;
+}
+}
+@media (max-width: 768px) {
+  
+  .container-radio-redesocial {   
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .social-midia-proderj{
+    width: 100% !important;
+  }
+  div.redes-webmail-wrap{
+    justify-content: center;
+  }
+  .endereco {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .views-view-grid .views-col {
+    width: 100%;
+  }
+
+  .box-acesso {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .box-resumo-acesso {
+    align-self: center;
+    width: 100% !important;
+  }
+
+  .logoproderj-redes-wrap {
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+  .titulo-secao span {
+    /* position: relative;
+    top: -58px; */
+  }
+
+  img.image-style-slider-secundario-1920x400 {
+    height: 200px !important;
+  }
+
+  .estrutura .titulo-secao span {
+    position: relative;
+    top: 0px;
+  }
+
+  img.image-style-slider-principal-1920x400 {
+    /* height: 200px !important; */
+  }
+
+  .menu-column {
+    margin: 10px;
+}
+
+  .section-container#cabecalho {
+    width: 100%;
+  }
+  /* .logo-rjgov {
+    display: none !important;
+  } */
+
+  .logo-rjgov-img {
+    width: 100% !important;
+  }
+
+  
+  .views-field.views-field-field-conteudo-do-presidente .field-content p {
+    width: 270px;
+  }
+  .menu-column{
+    width: auto !important;
+  }
+  
+}
+@media (min-width: 376px) and (max-width: 620px) {
+  .logo-rjgov-img {
+    width: 250px;
+  }
+  .nome-secretaria-conteudo {
+    color: white;
+    /* position: relative; */
+    /* top: 75px;
+    left: 20px; */
+  }
+  .nome-secretaria {
+    margin: 0px;
+    position: relative;
+    right: 55px;
+  }
+
+  .logoproderj-redes-wrap{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+  }
+  .logo-rjgov-img2 {
+    width: 55%;
+    margin: 10px 0px 0px -45% !important;
+}
+  .container-radio-redesocial {   
+    margin-left: 30px !important;
+    padding-bottom: 20px
+  }
+}
+
+@media (max-width: 375px) {
+  .nome-secretaria-conteudo {
+    color: white;
+    /* position: relative;
+    top: 60px; */
+  }
+  .form--inline.clearfix {
+    width: 80%;
+    position: relative;
+    top: 24px;
+    left: 70px;
+}
+.container-radio-redesocial {
+  width: 45% !important;
+  display: flex !important;
+  /* margin-left: 0% !important; */
+  position: relative !important;
+  left: -36px !important;
+}
+.form--inline.clearfix {
+  width: 80%;
+  position: relative !important;
+  left: 62px !important;
+}
+
+.section-wrap.aos-init.aos-animate {
+  position: relative;
+  right: 30px;
+}
+.logo-rjgov-img {
+  width: 100% !important;
+}
+
+
+}
+
+@media (max-width: 320px) {
+  .nome-secretaria-conteudo {
+    top: 40px;
+    left: 30px;
+  }
+}

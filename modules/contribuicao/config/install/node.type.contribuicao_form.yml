@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - contribuicao
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Formulário para Contribuição'
+type: contribuicao_form
+description: 'Este tipo de conteúdo contém dados de todos os envios de formulários para contribuções.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

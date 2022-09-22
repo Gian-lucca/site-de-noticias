@@ -1,0 +1,20 @@
+{
+  "name": "drupal/diba_carousel",
+  "type": "drupal-module",
+  "description": "Diba carousel block based on Bootstrap carousel.",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Oriol Roselló Castells",
+      "homepage": "https://www.drupal.org/u/oriol_e9g",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/diba_carousel",
+    "source": "http://cgit.drupalcode.org/diba_carousel"
+  },
+  "require": {
+    "drupal/core": "^8 || ^9"
+  }
+}

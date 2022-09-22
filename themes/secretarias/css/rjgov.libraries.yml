@@ -1,0 +1,47 @@
+# rjgov.libraries.yml
+# Arquivo de configurações de libs usadas no tema,
+# como css e javascript, necessário para que estes
+# tipos de arquivos sejam reconhecidos e servidos
+# corretamente pelo framework.
+#
+# author Davi Bernardo <davi.santos@extreme.digital>
+# version 1.0
+# copyright Proderj 2021.
+global-css:
+  version: 1.0
+  css:
+    theme:
+      css/reset.css: {}
+      css/magnific-popup.css: {}
+      css/contraste.css: {}
+      css/menu-mobile.css: {}
+      css/modal-component.css: {}
+      css/acessibilidade-dropdown.css: {}
+      css/style.css: {}
+      css/flip-card.css: {}
+      css/bootstrap-glyphicons.css: {}
+      css/portal-governo.css: {}
+      css/proderj.css: {}
+      css/aos/dist/aos.css: {}
+      css/style-transparencia: {}
+      css/swiper: {}
+      css/inpage.css: {}
+
+global-js:
+  version: 1.0
+  js:   
+    js/swiper.min.js: {}
+    js/modal/classie.js: {}
+    js/modal/modalEffectsTelefones.js: {}
+    js/main.js: {}
+
+rjgov-aos:
+  version: 1.0
+  js:
+    js/aos/dist/aos.js: { preprocess: false }
+    js/aos/dist/AosInit.js: { preprocess: false }
+
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
